@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './media.module.css';
 
 function NasserVideo() {
-
   return (
     <div className={styles.banner2}>
       <div className={styles.info}>  Profitez de nos packs. <span>J'y vais </span> </div>
