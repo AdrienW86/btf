@@ -1,12 +1,27 @@
 .banner {
-    position: relative;
-    width: 100%;
-    transition: .4s ease-in-out;
-    overflow: hidden;
-    aspect-ratio: 2/4;
-  }
+  position: relative;
+  width: 100%;
+  transition: .4s ease-in-out;
+  overflow: hidden;
+  aspect-ratio: 2/4;
+}
 
+.banner2 {
+  position: relative;
+  max-height: 80vh;
+ 
+  background-color: white;
+}
+
+.info {
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+
+  /* Mobile */
+@media (min-width: 480px) {
   .banner2 {
-    background-color: white;
+    max-height: none;
   }
-
+}
