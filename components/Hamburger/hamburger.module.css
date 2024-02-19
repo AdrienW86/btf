@@ -67,7 +67,7 @@
   transition: .4s ease-in-out;
   background-color: #f3f3f3;
   overflow-y: auto; /* Ajoutez cette ligne pour activer le défilement vertical */
- 
+  max-height: calc(150vh - 110px); /* Définissez la hauteur maximale en fonction de la hauteur de la fenêtre moins la position initiale */
 }
 
   
