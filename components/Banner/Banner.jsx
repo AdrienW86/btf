@@ -7,7 +7,7 @@ import styles from './banner.module.css'
 export default function Banner(props) {
   return (
     <div className={styles.container}>
-        <div className={styles.background}>
+        <div >
             <section className={styles.banner}>       
             <h1 className={styles.h1}> {props.title} </h1>
                 <p className={styles.description}>                
@@ -18,6 +18,7 @@ export default function Banner(props) {
                 fill
                 priority       
                 alt='banner'
+                className={styles.background}
             />  
             </section>           
         </div>

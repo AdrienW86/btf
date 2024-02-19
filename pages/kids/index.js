@@ -1,10 +1,10 @@
 import React from 'react'
 import Banner from '@/components/Banner/Banner'
 import Background from '@/assets/kids.jpg'
-import Banner1 from '@/assets/survet-women.png'
+import Banner1 from '@/assets/kids-survet.jpg'
 import Banner2 from '@/assets/kids_maillot.jpg'
-import Banner3 from '@/assets/women-short.jpg'
-import Banner4 from '@/assets/women-accessoires.jpg'
+import Banner3 from '@/assets/kids-short.jpg'
+import Banner4 from '@/assets/kid-accessoires.jpg'
 
 export default function kids() {
   return (

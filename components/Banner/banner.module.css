@@ -38,6 +38,10 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
+.background {
+    filter: brightness(70%) grayscale(0%);
+}
+
 .h2 {
     padding: 16px;
     font-family: "Bebas Neue", sans-serif;
