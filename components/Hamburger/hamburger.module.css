@@ -66,7 +66,7 @@
   padding-top: 15px;
   transition: .4s ease-in-out;
   background-color: #f3f3f3;
-  overflow-y: auto; /* Ajoutez cette ligne pour activer le défilement vertical */
+  overflow-y: auto; 
   height: 200vh
 }
 
@@ -141,6 +141,6 @@
 
 .logoBasket {
   position: relative;
-  bottom: 63px;
+  bottom: 60px;
   right: 10px;
 }

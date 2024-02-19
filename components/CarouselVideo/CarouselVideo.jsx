@@ -42,8 +42,8 @@ function CustomSlider() {
           <div className={styles.info}> 
            AJAX AMSTERDAM
           </div>
-        <video poster="/nasser.png" controls className={styles.banner} preload="auto">
-        <source src="/nasser.mp4" type="video/mp4" />
+        <video poster="/nasser2.png" controls className={styles.banner} preload="auto">
+        <source src="/nasser2.mp4" type="video/mp4" />
         Votre navigateur ne supporte pas la lecture de vidéos au format MP4.
       </video>
         </div>
