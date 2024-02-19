@@ -67,7 +67,7 @@
   transition: .4s ease-in-out;
   background-color: #f3f3f3;
   overflow-y: auto; 
-  height: 200vh
+  height: calc(100vh + 110px);
 }
 
   
