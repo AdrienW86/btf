@@ -3,6 +3,15 @@
   background-color: rgb(0, 0, 0);
   position: fixed;
   z-index: 5;
+  transition: top 0.3s; 
+}
+
+.visible {
+  top: 0; 
+}
+
+.hidden {
+  top: -100px; 
 }
 
 .inputContainer {
