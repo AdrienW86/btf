@@ -12,14 +12,16 @@ export default function Footer() {
    <footer className={styles.footer}>
       <p className={styles.copyright}> © Boutique du foot - {currentYear}</p>
       <div className={styles.social}>
-      <Image
-        src={Snap}
-        width={40}
-        height={40}
-        priority
-        className={styles.picture}
-        alt='Snapchat logo'       
-        />
+        <Link href='https://www.snapchat.com/add/boutiquedufoot/QlNSdc84TSu6JI7Da5HkZAAAgdXlud3p5Y2tvAY290QS9AY290ECiAAAAAA?share_id=DXc0ltJnSGSlpzIqDzZL3A&locale=fr_FR'>
+          <Image
+            src={Snap}
+            width={40}
+            height={40}
+            priority
+            className={styles.picture}
+            alt='Snapchat logo'       
+            />
+        </Link>
       </div>
       <ul className={styles.ul}>
         <li className={styles.li}> <Link href='/mentions'> Mentions Légales </Link> </li>

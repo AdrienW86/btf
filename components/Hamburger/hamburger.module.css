@@ -1,5 +1,6 @@
 .hamburger_container {
-  width: 35%;
+  width: 100%;
+  height: 100vh;
 }
   
 .hamburger {
@@ -68,6 +69,10 @@
   background-color: #f3f3f3;
   overflow-y: auto; 
   height: calc(100vh + 110px);
+}
+
+.menu.open {
+  left: 0; /* Lorsqu'ouvrez le menu, déplacez-le vers la droite pour le faire apparaître */
 }
 
   
