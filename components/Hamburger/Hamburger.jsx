@@ -41,8 +41,8 @@ const Hamburger = ({productsLength}) => {
         <ul className={styles.menu}>
           <li className={styles.menu_link}>
             <div>
-             
-                <p className={styles.linkText} onClick={router.push("/mens")}> HOMMES </p> 
+              <Link href='/mens' className={styles.link} onClick={handleMenuToggle}> 
+                <p className={styles.linkText}> HOMMES </p> 
                 <Image 
                   src={Men}
                   height={70}
@@ -50,12 +50,12 @@ const Hamburger = ({productsLength}) => {
                   className={styles.linkImg}
                   alt="image du panier"
                 />   
-              
+              </Link>
             </div>
           </li> 
           <li className={styles.menu_link}>
             <div>
-              <Link href='/' className={styles.link}> 
+            <Link href='/womens' className={styles.link} onClick={handleMenuToggle}> 
                 <p className={styles.linkText}> FEMMES </p> 
                 <Image 
                   src={Women}
@@ -69,7 +69,7 @@ const Hamburger = ({productsLength}) => {
           </li> 
           <li className={styles.menu_link}>
             <div>
-              <Link href='/' className={styles.link}> 
+            <Link href='/kids' className={styles.link} onClick={handleMenuToggle}> 
                 <p className={styles.linkText}> JUNIORS </p> 
                 <Image 
                   src={Child}
@@ -83,7 +83,7 @@ const Hamburger = ({productsLength}) => {
           </li> 
           <li className={styles.menu_link}>
             <div>
-              <Link href='/' className={styles.link}> 
+            <Link href='/maillots' className={styles.link} onClick={handleMenuToggle}>
                 <p className={styles.linkText}> MAILLOTS </p> 
                 <Image 
                   src={Maillot}
@@ -97,7 +97,7 @@ const Hamburger = ({productsLength}) => {
           </li> 
           <li className={styles.menu_link}>
             <div>
-              <Link href='/' className={styles.link}> 
+            <Link href='/sockets' className={styles.link} onClick={handleMenuToggle}> 
                 <p className={styles.linkText}> CHAUSSETTES </p> 
                 <Image 
                   src={Socket}
@@ -111,7 +111,7 @@ const Hamburger = ({productsLength}) => {
           </li> 
           <li className={styles.menu_link}>
             <div>
-              <Link href='/' className={styles.link}> 
+            <Link href='/balms' className={styles.link} onClick={handleMenuToggle}>
                 <p className={styles.linkText}> BAUMES </p> 
                 <Image 
                   src={Balm}
@@ -125,7 +125,7 @@ const Hamburger = ({productsLength}) => {
           </li>
           <li className={styles.menu_link}>
             <div>
-              <Link href='/' className={styles.link}> 
+            <Link href='/boxs' className={styles.link} onClick={handleMenuToggle}>
                 <p className={styles.linkText}> COFFRETS </p> 
                 <Image 
                   src={Box}
@@ -139,7 +139,7 @@ const Hamburger = ({productsLength}) => {
           </li> 
           <li className={styles.menu_link}>
             <div>
-              <Link href='/' className={styles.link}> 
+            <Link href='/good-deal' className={styles.link} onClick={handleMenuToggle}>
                 <p className={styles.linkText}> BON PLANS </p> 
               </Link>
             </div>

@@ -66,11 +66,6 @@
   height: calc(100vh + 110px);
 }
 
-.menu.open {
-  left: 0; /* Lorsqu'ouvrez le menu, déplacez-le vers la droite pour le faire apparaître */
-}
-
-  
 .menu_link {
   display: flex;
   flex-direction: column;

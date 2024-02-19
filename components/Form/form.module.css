@@ -56,14 +56,14 @@
     border: 1px solid #dddddd;
     width: 90%;
     margin: 0 auto 15px auto;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .textarea {
     height: 250px;
 }
 
-.textarea::placeholder {
+.textarea {
     padding-top: 20px;
 }
 
