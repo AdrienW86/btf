@@ -62,7 +62,6 @@
   flex-direction: column;
   list-style: none;
   top: 110px;
-  min-height: 100vh;
   width: 100%;
   padding-top: 15px;
   transition: .4s ease-in-out;
