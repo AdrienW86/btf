@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import Basket from '@/assets/basket.png';
@@ -13,6 +14,7 @@ import Balm from '@/assets/tiger-red.webp';
 import styles from './hamburger.module.css';
 
 const Hamburger = ({productsLength}) => {
+  const router = useRouter()
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -39,8 +41,8 @@ const Hamburger = ({productsLength}) => {
         <ul className={styles.menu}>
           <li className={styles.menu_link}>
             <div>
-              <Link href='/' className={styles.link}> 
-                <p className={styles.linkText}> HOMMES </p> 
+             
+                <p className={styles.linkText} onClick={router.push("/mens")}> HOMMES </p> 
                 <Image 
                   src={Men}
                   height={70}
@@ -48,7 +50,7 @@ const Hamburger = ({productsLength}) => {
                   className={styles.linkImg}
                   alt="image du panier"
                 />   
-              </Link>
+              
             </div>
           </li> 
           <li className={styles.menu_link}>
