@@ -1,46 +1,46 @@
 .hamburger_container {
-    width: 35%;
-  }
+  width: 35%;
+}
   
-  .hamburger {
-    top: 15px;
-    right: 20px;
-    width: 22px;
-    height: 20px;
-    z-index: 30;
-    border: none;
-    display: flex;
-    opacity: 0.7;
-    position: absolute;
-    flex-direction: column;
-    background-color: transparent;
-    justify-content: space-between;
-  }
+.hamburger {
+  top: 15px;
+  right: 20px;
+  width: 22px;
+  height: 20px;
+  z-index: 30;
+  border: none;
+  display: flex;
+  opacity: 0.7;
+  position: absolute;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-between;
+}
   
-  .open {
-    height: 19px;
-  }
+.open {
+  height: 19px;
+}
    
-  .line {
-    width: 100%;
-    height: 2px;
-    background-color: #868686;
-    transition: transform 0.3s, opacity 0.3s;
-  }
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #868686;
+  transition: transform 0.3s, opacity 0.3s;
+}
   
-  .line:hover{
-    background-color: #868686;
-  }
+.line:hover{
+  background-color: #868686;
+}
     
-  .open .line:nth-child(1) {
-    transform: rotate(45deg) translate(7px, 7px);
-    background-color: #868686;
-  }
+.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+  background-color: #868686;
+}
   
-  .open .line:nth-child(2) {
-    opacity: 0;
-    background-color: #868686;
-  }
+.open .line:nth-child(2) {
+  opacity: 0;
+  background-color: #868686;
+}
     
 .open .line:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
@@ -119,27 +119,26 @@
 }
   
 .span {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 95px;    
-    width: 20px;
-    height: 20px;
-    font-size: 0.5em;
-    padding: 6px;
-    border-radius: 50%;
-    color: rgb(255, 255, 255);
-    background-color: orangered;
+ display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 95px;    
+  width: 20px;
+  height: 20px;
+  font-size: 0.5em;
+  padding: 6px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  background-color: orangered;
 }
 
 .logo {
   position: relative;
   bottom: 26px;
-  left: 10px;
 }
 
 .logoBasket {
-   position: relative;
-   bottom: 63px;
-   right: 10px;
+  position: relative;
+  bottom: 63px;
+  right: 10px;
 }

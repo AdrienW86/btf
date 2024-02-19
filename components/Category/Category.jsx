@@ -1,18 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
+import Carousel from '@/components/Carousel/Carousel'
 import styles from './category.module.css'
 
 export default function Category({picture}) {
   return (
-    <div className={styles.banner}>
-      <button className={styles.btn}> Voir </button>
-      <Image 
-        src={picture}
-        fill
-        priority   
-        className={styles.picture}    
-        alt='banner'   
-      />       
-    </div>    
+
+    <>
+      <h1 className={styles.title}> NOS COLLECTIONS </h1>
+      <Carousel />
+    </>
+   
   )
 }

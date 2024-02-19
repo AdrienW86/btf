@@ -22,12 +22,12 @@ const Hamburger = ({productsLength}) => {
   return (
     <section className={styles.hamburger_container}>
       <Image 
-            src={Logo}
-            height={42}
-            width={82}
-            className={styles.logo}
-            alt="image du logo"
-          />   
+        src={Logo}
+        height={42}
+        width={82}
+        className={styles.logo}
+        alt="image du logo"
+      />   
       <button className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close}`} onClick={handleMenuToggle}>
         <span className={styles.line}> </span>
         <span className={styles.line}></span>

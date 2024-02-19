@@ -1,0 +1,23 @@
+.slider {
+    max-width: 1000px;
+}
+
+.card {
+    
+    margin: 0 5px; /* Marge de 5px à gauche et à droite pour obtenir une marge totale de 10px entre les éléments */
+   
+
+
+    
+}
+
+.h3 {
+    padding-left: 10px;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.p {
+    font-size: 0.8em;
+    padding-left: 10px;
+    font-family: "Bebas Neue", sans-serif;
+}

@@ -11,14 +11,8 @@ import styles from '@/styles/Home.module.css'
 export default function Accueil() {
   return (
     <section className={styles.home}>
-       <NasserVideo />   
-        <Link href="/shop#anchor3">         
-          <Category picture ={Banner6} />     
-        </Link>  
-        <Link href="/shop#anchor2">      
-          <Category picture ={Banner5} /> 
-        </Link>        
-       
+       <NasserVideo />         
+          <Category picture ={Banner6} />      
     </section>
   )
 }
