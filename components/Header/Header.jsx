@@ -10,20 +10,17 @@ export default function Header() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 150);
+      setPrevScrollPos(currentScrollPos);
+    };
+  
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [prevScrollPos, visible]);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    setVisible(
-      (prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) ||
-      currentScrollPos < 10
-    );
-    setPrevScrollPos(currentScrollPos);
-  };
+  }, [prevScrollPos]);
 
   return (
     <header className={`${styles.header} ${visible ? styles.visible : styles.hidden}`}>

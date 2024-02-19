@@ -4,6 +4,7 @@ import styles from './media.module.css';
 function NasserVideo() {
   return (
    <>  
+    <div className={styles.filter}></div>
     <div className={styles.banner2}> 
       <div className={styles.info}>  Profitez de nos offres du moment. <span className={styles.span}> J'en profite </span> </div>
       <video poster="/nasser.png" controls className={styles.banner} preload="auto">
