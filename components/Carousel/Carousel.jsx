@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Men from '@/assets/collection-homme.jpg';
 import Women from '@/assets/collection-femme.jpg';
 import Child from '@/assets/collection-junior.jpg';
-import Maillot from '@/assets/psg.png';
 import styles from './carousel.module.css';
 
 function CustomSlider() {
@@ -66,7 +65,7 @@ function CustomSlider() {
           /> 
         </div>
         <h3 className={styles.h3}> COLLECTION FEMMES</h3>
-        <p className={styles.p}> Découvrir la collection femmes</p>       
+        <p className={styles.p}> Découvrir la collection femmes</p> 
       </div>
       <div className={styles.section}>
         <div className={styles.card}>
@@ -81,7 +80,6 @@ function CustomSlider() {
         <h3 className={styles.h3}> COLLECTION JUNIORS</h3>
         <p className={styles.p}> Découvrir la collection juniors</p>
       </div>
-      {/* Ajoutez plus de cartes ici */}
     </Slider>
   );
 }

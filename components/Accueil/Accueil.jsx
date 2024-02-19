@@ -11,8 +11,8 @@ import styles from '@/styles/Home.module.css'
 export default function Accueil() {
   return (
     <section className={styles.home}>
-       <NasserVideo />         
-          <Category picture ={Banner6} />      
+        <NasserVideo />         
+        <Category />      
     </section>
   )
 }
