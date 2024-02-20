@@ -219,11 +219,9 @@
   top: 148px;
   width: 100%;
   z-index: 20;
-  overflow-y: scroll;
   padding-top: 15px;
   transition: .4s ease-in-out;
-  /* background-color: #f3f3f3; */
-  background-color: #9c4242; 
+  background-color: #f3f3f3; 
   height: 120vh
 }
 
