@@ -29,26 +29,35 @@ const handleMenuToggle = () => {
 
 useEffect(() => {
   const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 150);
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, [prevScrollPos]);
+
+useEffect(() => {
+  const handleScroll2 = () => {
     if (isMenuOpen) {
       console.log('empeche')
       document.body.style.overflow = 'hidden';
     } else {
-      // Activer le défilement si le menu est fermé
+      console.log('empeche pas')
       document.body.style.overflow = 'visible';
     }
   };
 
-  // Ajouter l'écouteur d'événement lorsqu'un changement est détecté dans isMenuOpen
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll2);
 
-  // Nettoyer l'écouteur d'événement lorsque le composant est démonté
   return () => {
-    window.removeEventListener('scroll', handleScroll);
-    // Rétablir la valeur de l'overflow lorsque le composant est démonté
+    window.removeEventListener('scroll', handleScroll2);
     document.body.style.overflow = 'visible';
   };
 }, [isMenuOpen]);
-
 
   useEffect(() => {
     if (router.pathname === '/success') {
@@ -57,37 +66,15 @@ useEffect(() => {
       const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
       setProductsLength(storedProducts.length);
     }
-
     const updateProductsLength = () => {
       const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
       setProductsLength(storedProducts.length);
     };
     window.addEventListener('cartChange', updateProductsLength);
-
     return () => {
       window.removeEventListener('cartChange', updateProductsLength);
     };
   }, [router.pathname]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (isMenuOpen) {
-        // Empêcher le défilement si le menu est ouvert
-        document.body.style.overflow = 'hidden';
-      } else {
-        // Activer le défilement si le menu est fermé
-        document.body.style.overflow = 'visible';
-      }
-    };
-  
-    // Ajouter l'écouteur d'événement lorsqu'un changement est détecté dans isMenuOpen
-    window.addEventListener('scroll', handleScroll);
-  
-    // Nettoyer l'écouteur d'événement lorsque le composant est démonté
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [isMenuOpen]);
   
   return (
   <>
@@ -136,10 +123,23 @@ useEffect(() => {
           </div>         
         </div>
       </section>
+      <Link  href='/card'> 
+        <li className={styles.menu_basket}>
+          <Image 
+            src={Basket}
+            height={22}
+            width={22}
+            className={styles.logoBasket}
+            alt="image du panier"
+          />         
+          {productsLength === 0 ? null : 
+            <span className={styles.span}>{productsLength && `${productsLength}`}</span> 
+          }
+        </li>      
+      </Link>
     </header>
     <section className={`${styles.menuBox} ${isMenuOpen ? styles.menuBoxOpen : ''}`}>
-    {isMenuOpen && (
-       
+    {isMenuOpen && (      
        <ul className={styles.menu}>
        <li className={styles.menu_link}>
          <div>
@@ -246,25 +246,9 @@ useEffect(() => {
            </Link>
          </div>
        </li> 
-     </ul>
-    
+     </ul>    
      )}
-     <section/>
-      <Link  href='/card'> 
-        <li className={styles.menu_basket}>
-          <Image 
-            src={Basket}
-            height={22}
-            width={22}
-            className={styles.logoBasket}
-            alt="image du panier"
-          />         
-          {productsLength === 0 ? null : 
-            <span className={styles.span}>{productsLength && `${productsLength}`}</span> 
-          }
-        </li>      
-      </Link>
-    </section>
+     </section>    
   </>
   );
 }
