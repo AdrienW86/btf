@@ -1,5 +1,21 @@
+.hamburger_container {
+  position: absolute;
+  height: 100vh;
+  background-color: blue
+}
+
+.nav {
+  height: 40px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-top: 20px;
+  background-color: white;
+  top: 90px;
+  width: 100%; 
+}
+
 .hamburger {
-  top: 15px;
+  bottom: 20px;
   right: 20px;
   width: 22px;
   height: 20px;
@@ -57,13 +73,16 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  top: 110px;
+  padding-top: 110px;
+  top: -38px;
   width: 100%;
+  z-index: 20;
   padding-top: 15px;
   transition: .4s ease-in-out;
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
+  background-color: #9c4242;
   overflow-y: auto; 
-  height: calc(100vh + 110px);
+  height: 100vh
 }
 
 .menu_link {
@@ -113,6 +132,10 @@
 
 .linkImg2 {
   margin-right: 10px;
+}
+
+.linkImg2 {
+  margin-right: 8px;
 }
   
 .span {

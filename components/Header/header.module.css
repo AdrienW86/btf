@@ -1,9 +1,35 @@
 .header {
+ position: relative
+}
+
+.hamburger_container {
+  position: fixed;
+  top: 0;
+  height: 0vh;
+  width: 100%;
+}
+
+.test {
   width: 100%;
   background-color: rgb(0, 0, 0);
   position: fixed;
   z-index: 5;
-  transition: top 0.3s; 
+  transition: top 0.3s;
+  background-color: orangered; 
+}
+
+.span {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 95px;    
+  width: 20px;
+  height: 20px;
+  font-size: 0.5em;
+  padding: 6px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  background-color: orangered;
 }
 
 .visible {
@@ -14,9 +40,27 @@
   top: -200px; 
 }
 
+.hamburger_container {
+  position: relative;
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  top: 45px;
+  left: -5px
+}
+
+.logoBasket {
+  position: relative;
+  bottom: 55px;
+  right: 10px;
+}
+
 .inputContainer {
-  height: 50px;
-  width: 90%;
+  height: 48px;
+  width: 95%;
   margin: 0 auto;
   border-radius: 24px;
   border: none;
@@ -24,12 +68,14 @@
   padding-left: 30px;
   position: relative;
   display: flex;
+  top: 22px;
 }
 
 .input {
-  height: 50px;
-  width: 90%;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
+  position: relative;
+  height: 47px;
+  width: 95%;
+  font-family: Roboto, Helvetica,Arial,sans-serif;
   margin: 0 auto;
   border-radius: 24px;
   border: none;
@@ -37,6 +83,13 @@
   padding-left: 0px;
   padding-right: 30px; 
   outline: none;
+  letter-spacing: 1%;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.input::placeholder {
+  letter-spacing: 1%;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .input:focus {
@@ -62,7 +115,7 @@
   flex-direction: column;
   justify-content: center;
   color: rgb(0, 0, 0);
-  font-family: Roboto,Helvetica,Arial,sans-serif;
+  font-family: Roboto, Helvetica,Arial,sans-serif;
   font-size: var(--13px);
   letter-spacing: -.03em;
   font-weight: 700;
@@ -101,4 +154,129 @@
   right: 5px;
   transform: translateY(-50%);
   pointer-events: none; 
+}
+
+.hamburger {
+  top: 55px;
+  right: 20px;
+  width: 22px;
+  height: 20px;
+  z-index: 30;
+  border: none;
+  display: flex;
+  opacity: 0.7;
+  position: absolute;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-between;
+}
+  
+.open {
+  height: 19px;
+}
+   
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #868686;
+  transition: transform 0.3s, opacity 0.3s;
+}
+  
+.line:hover{
+  background-color: #868686;
+}
+    
+.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+  background-color: #868686;
+}
+  
+.open .line:nth-child(2) {
+  opacity: 0;
+  background-color: #868686;
+}
+    
+.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background-color: #868686;
+}
+  
+.open .line, .close .line {
+  background-color: #868686;
+}
+  
+.open:hover .line, .close:hover .line {
+  cursor: pointer;
+  background-color: #868686;
+}
+    
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-top: 110px;
+  top: 148px;
+  width: 100%;
+  z-index: 20;
+  overflow-y: scroll;
+  padding-top: 15px;
+  transition: .4s ease-in-out;
+  /* background-color: #f3f3f3; */
+  background-color: #9c4242; 
+  height: 120vh
+}
+
+.menu_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  width: 95%;
+  height: 75px;
+  margin: 0 auto 5px auto;
+  border-radius: 8px;
+  transition: .4s ease-in-out;
+  color: rgb(12, 12, 12); 
+  background-color: #ffffff;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+  
+.menu_link:hover {
+  color: orangered;
+  cursor: pointer;
+} 
+
+.menu_basket {
+  position: absolute;
+  top: 108px;
+  right: 60px;
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.linkImg1 {
+  margin-right: 15px;
+}
+
+.linkImg2 {
+  margin-right: 10px;
+}
+
+.linkImg2 {
+  margin-right: 8px;
 }
