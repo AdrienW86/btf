@@ -8,7 +8,7 @@ import Box from '@/assets/box.png';
 import Men from '@/assets/hommes2.png';
 import Women from '@/assets/femmes.png';
 import Child from '@/assets/juniors3.png';
-import Maillot from '@/assets/psg.png';
+import Maillot from '@/assets/maillots_hommes/psg.png';
 import Socket from '@/assets/yellow.jpg';
 import Balm from '@/assets/tiger-red.webp';
 import styles from './hamburger.module.css';

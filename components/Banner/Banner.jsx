@@ -22,7 +22,12 @@ export default function Banner(props) {
             />  
             </section>           
         </div>
-        <CategoryCarousel />
+        <CategoryCarousel 
+            sportswear = {props.url1}
+            maillots = {props.url2}
+            shorts = {props.url3}
+            accessoires = {props.url4}
+        />
         <div className={styles.category}>
             <section className={styles.banner}>         
             <Image 

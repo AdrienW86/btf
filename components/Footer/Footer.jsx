@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Snap from '@/assets/snap.svg'
 import styles from './footer.module.css'
 
 export default function Footer() {
@@ -14,7 +13,7 @@ export default function Footer() {
       <div className={styles.social}>
         <Link href='https://www.snapchat.com/add/boutiquedufoot/QlNSdc84TSu6JI7Da5HkZAAAgdXlud3p5Y2tvAY290QS9AY290ECiAAAAAA?share_id=DXc0ltJnSGSlpzIqDzZL3A&locale=fr_FR'>
           <Image
-            src={Snap}
+            src='/snap.svg'
             width={40}
             height={40}
             priority

@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './categoryCarousel.module.css'
 
-function CustomSlider() {
+function CategoryCarousel(props) {
   const settings = {
     dots: false,
     infinite: true,
@@ -15,7 +15,7 @@ function CustomSlider() {
     swipeToSlide: true,
     touchThreshold: 10,
     centerMode: true, 
-    centerPadding: '125px',
+    centerPadding: '85px',
     responsive: [
       {
         breakpoint: 1024,
@@ -38,7 +38,7 @@ function CustomSlider() {
 
   return (
     <Slider {...settings} className={styles.slider}>
-      <Link href="/mens">
+      <Link href={props.sportswear}>
         <div className={styles.section}>
           <div className={styles.card}>
             <button className={styles.btn}> Survêtements </button>
@@ -46,15 +46,14 @@ function CustomSlider() {
           
         </div>
       </Link>
-      <Link href="/womens">
+      <Link href={props.maillots}>
         <div className={styles.section}>
           <div className={styles.card}>
             <button className={styles.btn}> Maillots </button>
-          </div>
-          
+          </div>          
         </div>
       </Link>
-      <Link href="/kids">
+      <Link href={props.shorts}>
         <div className={styles.section}>
           <div className={styles.card}>
             <button className={styles.btn}> Shorts </button>
@@ -62,7 +61,7 @@ function CustomSlider() {
           
         </div>
       </Link>
-      <Link href="/kids">
+      <Link href={props.accessoires}>
         <div className={styles.section}>
           <div className={styles.card}>
             <button className={styles.btn}> Accessoires </button>
@@ -73,4 +72,4 @@ function CustomSlider() {
   );
 }
 
-export default CustomSlider;
+export default CategoryCarousel;
