@@ -28,21 +28,20 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-.p:hover {
-    cursor: pointer;
-    color: orangered
-}
-
 .btn {
     padding: 10px;
     width: 150px;
     color: orangered;
+    background-color: white;
     letter-spacing: 0.1em;
     border-radius: 22px;
-    border: 1px solid black;
+    transition: .4s ease-in-out;
+    border: 1px solid orangered;
     font-family: "Bebas Neue", sans-serif; 
 }
 
 .btn:hover {
     cursor: pointer;
+    color: white;   
+    background-color: orangered
 }

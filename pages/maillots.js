@@ -1,9 +1,10 @@
 import React from 'react'
+import CategoryMaillots from '@/components/Menu/CategoryMaillots/CategoryMaillots'
 
 export default function maillots() {
   return (
     <section>
-      <h1> </h1>
+      <CategoryMaillots />
     </section>
   )
 }

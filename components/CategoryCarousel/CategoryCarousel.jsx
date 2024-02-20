@@ -11,8 +11,7 @@ function CategoryCarousel(props) {
           <div className={styles.section}>
             <div className={styles.card}>
               <button className={styles.btn}> Survêtements </button>
-            </div>
-            
+            </div>            
           </div>
         </Link>
         <Link href={props.maillots}>
@@ -28,8 +27,7 @@ function CategoryCarousel(props) {
           <div className={styles.section}>
             <div className={styles.card}>
               <button className={styles.btn}> Shorts </button>
-            </div>
-            
+            </div>           
           </div>
         </Link>
         <Link href={props.accessoires}>

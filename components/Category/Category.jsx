@@ -9,7 +9,7 @@ import Banner3 from '@/assets/tiger.webp'
 import Banner4 from '@/assets/bon-plan.jpg'
 import styles from './category.module.css'
 
-export default function Category({picture}) {
+export default function Category() {
   return (
     <>
       <h1 className={styles.title}> NOS COLLECTIONS </h1>

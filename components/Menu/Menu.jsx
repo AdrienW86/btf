@@ -111,9 +111,7 @@ export default function Menu() {
            </Link>
          </div>
        </li> 
-     </ul>
-    
+     </ul>   
      )}
      </section>
-  
 )}
