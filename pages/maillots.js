@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function maillots() {
   return (
-    <div>maillots</div>
+    <section>
+      <h1> </h1>
+    </section>
   )
 }
