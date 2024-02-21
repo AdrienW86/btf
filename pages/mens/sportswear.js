@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Card from '@/components/Card/Card';
 import Banner from '@/assets/survet.jpg';
+import PaymentBanner from '@/components/PaymentBanner/PaymentBanner'
 import { data } from '@/data/sportswer';
 import Link from 'next/link'
 import styles from '@/styles/mens.module.css';
