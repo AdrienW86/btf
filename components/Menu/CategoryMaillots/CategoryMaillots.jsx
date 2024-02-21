@@ -28,7 +28,7 @@ export default function CategoryMaillots() {
             <h2 className={styles.h3}> Nos différentes collections </h2>     
                 <Link className={styles.btn} href="/mens/maillots"> Les maillots hommes </Link>           
                 <Link className={styles.btn} href="/womens/maillots"> Les maillots femmes </Link>                       
-                <Link className={styles.btn} href="/kids/maillots"> Les maillots enfants</Link>          
+                <Link className={styles.btn} href="/juniors/maillots"> Les maillots enfants</Link>          
         </div>
         <div className={styles.category}>
             <Link href="/mens/maillots">

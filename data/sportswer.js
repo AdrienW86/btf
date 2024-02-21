@@ -3,6 +3,7 @@ import Black from '@/assets/survet_hommes/survet-bf-noir2.png'
 import Kaki from '@/assets/survet_hommes/survet-bf-kaki2.png'
 import Beige from '@/assets/survet_hommes/survet-beige.png'
 import Blue from '@/assets/survet_hommes/survet-blue.png'
+import BlueVerso from '@/assets/survet_hommes/survet-blue-verso.png'
 import Purple from '@/assets/survet_hommes/survet-violet.png'
 import Red from '@/assets/survet_hommes/survet-red2.png'
 import Velours from '@/assets/survet_hommes/velours.png'
@@ -24,7 +25,7 @@ export const data = {
             name: "Survêtement IceBlue",
             price: 89,
             recto: Blue,
-            verso: Blue,
+            verso: BlueVerso,
             description: "Ensemble jogging et sweat à capuche respirant à séchage rapide en polyester (90%) et élasthanne (10%).",
             sizes: ["S","M","L","XL"]
         },  
@@ -130,15 +131,15 @@ export const data = {
             description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%) de la collection Boutique du Foot.",
             sizes: ["S","M","L","XL"]
         },  
-        {
-            id: uuidv4(),
-            name: "Ensemble",
-            price: 62,
-            recto: Blue2,
-            verso: Blue2,
-            description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%) de la collection Boutique du Foot.",
-            sizes: ["S","M","L","XL"]
-        }, 
+        // {
+        //     id: uuidv4(),
+        //     name: "Ensemble",
+        //     price: 62,
+        //     recto: Blue2,
+        //     verso: Blue2,
+        //     description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%) de la collection Boutique du Foot.",
+        //     sizes: ["S","M","L","XL"]
+        // }, 
         {
             id: uuidv4(),
             name: "Ensemble",
