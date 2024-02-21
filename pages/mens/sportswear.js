@@ -26,20 +26,20 @@ export default function Sportswear() {
       </section>
       <section className={styles.cardContainer}>
         {data.men.map((el, index) => (
-          <Link href={`/product-details/${el.id}`} key={index}>          
-            <Card
-              id={el.id}
-              name={el.name}
-              recto={el.recto}
-              verso={el.verso}
-              price={el.price}
-              link={el.link}
-              sizes={el.sizes}
-              description={el.description}
-              selectedSize={selectedSize}
-              onSizeChange={(size) => setSelectedSize(size)}
-            />          
-          </Link>
+          <Link href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
+          <Card
+            id={el.id}
+            name={el.name}
+            recto={el.recto}
+            verso={el.verso}
+            price={el.price}
+            url={el.url}
+            sizes={el.sizes}
+            description={el.description}
+            selectedSize={selectedSize}
+            onSizeChange={(size) => setSelectedSize(size)}
+          />
+        </Link>
         ))}
       </section>
     </section>
