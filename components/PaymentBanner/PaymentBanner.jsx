@@ -19,7 +19,7 @@ export default function PaymentBanner() {
           alt='banner'
           className={styles.icons}
         />  
-        <p className={styles.p}> Paiment 100% Sécurisé</p>
+        <p className={styles.p}> Paiement 100% Sécurisé</p>
       </div>
       <div className={styles.card}>
         <Image 
