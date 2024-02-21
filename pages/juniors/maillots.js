@@ -10,7 +10,7 @@ import Caf from '@/assets/caf.png'
 import Uefa from '@/assets/uefa.png'
 import CardKids from '@/components/Card/CardKids'
 import { data } from '@/data/maillots'
-import styles from './mens.module.css'
+import styles from '@/styles/mens.module.css'
 
 export default function maillots() {
     const [selectedSection, setSelectedSection] = useState('');

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Banner from '@/assets/accessoires.jpg'
-import styles from './mens.module.css'
+import styles from '@/styles/mens.module.css'
 
 export default function accessoires() {
   return (
