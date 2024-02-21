@@ -20,7 +20,7 @@ export default function Card(props) {
       />  
     </section>  
     <h3 className={styles.h3}> {props.name} </h3> 
-      <p className={styles.description}> Maillot officiel pour homme de l'équipe {props.name} </p> 
+      <p className={styles.description}> {props.description} </p> 
       <p className={styles.price}>
         {props.price} €
       </p>                       

@@ -43,6 +43,11 @@
   margin: 0 1%;
   letter-spacing: 0.1em;
   font-family: "Bebas Neue", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Affiche jusqu'à 2 lignes */
+  -webkit-box-orient: vertical;
 }
    
 .price {

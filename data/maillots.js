@@ -51,6 +51,7 @@ export const data = {
             price: 90,
             recto: Lyon,
             verso: LyonVerso,
+            description: "Maillot officiel pour homme de l'équipe de l'Olympique de Lyon.",
             sizes: ["S","M","L","XL"]
         },  
         {
@@ -59,6 +60,7 @@ export const data = {
             price: 90,
             recto: Paris,
             verso: ParisVerso,
+            description: "Maillot officiel pour homme de l'équipe du Paris-Saint-Germain.",
             sizes: ["S","M","L","XL"]
         },
         {
@@ -67,6 +69,7 @@ export const data = {
             price: 90,
             recto: Marseille,
             verso: MarseilleVerso,
+            description: "Maillot officiel pour homme de l'équipe de l'Olympique de Marseille.",
             sizes: ["S","M","L","XL"]
         },          
     ],
@@ -77,6 +80,7 @@ export const data = {
             price: 90,
             recto: Arsenal,
             verso: ArsenalVerso,
+            description: "Maillot officiel pour homme de l'équipe d'Arsenal.",
             sizes: ["S","M","L","XL"]
         },   
         {
@@ -85,6 +89,7 @@ export const data = {
             price: 90,
             recto: ManchesterCity,
             verso: ManchesterCityVerso,
+            description: "Maillot officiel pour homme de l'équipe de Manchester City.",
             sizes: ["S","M","L","XL"]
         }, 
         {
@@ -93,6 +98,7 @@ export const data = {
             price: 90,
             recto: ManchesterUnited,
             verso: ManchesterUnitedVerso,
+            description: "Maillot officiel pour homme de l'équipe de Manchester United.",
             sizes: ["S","M","L","XL"]
         },  
     ],
@@ -103,6 +109,7 @@ export const data = {
             price: 90,
             recto: InterMilan,
             verso: InterMilanVerso,
+            description: "Maillot officiel pour homme de l'équipe de l'Inter de Milan.",
             sizes: ["S","M","L","XL"]
         },
         {
@@ -111,6 +118,7 @@ export const data = {
             price: 90,
             recto: Juventus,
             verso: JuventusVerso,
+            description: "Maillot officiel pour homme de l'équipe de la Juventus de Turin.",
             sizes: ["S","M","L","XL"]
         },   
     ],
@@ -121,6 +129,7 @@ export const data = {
             price: 90,
             recto: Madrid,
             verso: MadridVerso,
+            description: "Maillot officiel pour homme de l'équipe du Real de Madrid.",
             sizes: ["S","M","L","XL"]
         },
         {
@@ -129,6 +138,7 @@ export const data = {
             price: 90,
             recto: Barcelone,
             verso: BarceloneVerso,
+            description: "Maillot officiel pour homme de l'équipe du FC de Barcelone.",
             sizes: ["S","M","L","XL"]
         },   
     ],
@@ -139,10 +149,10 @@ export const data = {
             price: 90,
             recto: Bayern,
             verso: BayernVerso,
+            description: "Maillot officiel pour homme de l'équipe du Bayern de Munich.",
             sizes: ["S","M","L","XL"]
         },
-    ],
-    
+    ],   
     others: [
         {
             id: uuidv4(),
@@ -150,80 +160,7 @@ export const data = {
             price: 90,
             recto: Ajax,
             verso: AjaxVerso,
-            sizes: ["S","M","L","XL"]
-        },
-    ],
-    europe: [
-        {
-            id: uuidv4(),
-            name: "Cameroun",
-            price: 90,
-            recto: Cameroun,
-            verso: CamerounVerso,
-            sizes: ["S","M","L","XL"]
-        },
-        {
-            id: uuidv4(),
-            name: "Côte d'Ivoire",
-            price: 90,
-            recto: CoteIvoire,
-            verso: CoteIvoireVerso,
-            sizes: ["S","M","L","XL"]
-        },
-        {
-            id: uuidv4(),
-            name: "Espagne",
-            price: 90,
-            recto: Espagne,
-            verso: EspagneVerso,
-            sizes: ["S","M","L","XL"]
-        },
-        {
-            id: uuidv4(),
-            name: "France (Domicile)",
-            price: 90,
-            recto: France,
-            verso: FranceVerso,
-            sizes: ["S","M","L","XL"]
-            },
-        {
-            id: uuidv4(),
-            name: "France (Extérieur)",
-            price: 90,
-            recto: FranceExterieur,
-            verso: FranceExterieurVerso,
-            sizes: ["S","M","L","XL"]
-        },
-        {
-            id: uuidv4(),
-            name: "Sénégal",
-            price: 90,
-            recto: Senegal,
-            verso: SenegalVerso,
-            sizes: ["S","M","L","XL"]
-        },
-        {
-            id: uuidv4(),
-            name: "Algérie",
-            price: 90,
-            recto: Algerie,
-            verso: AlgerieVerso,
-            sizes: ["S","M","L","XL"]
-        }, 
-        {
-            id: uuidv4(),
-            name: "Maroc",
-            price: 90,
-            recto: Maroc,
-            verso: MarocVerso,
-            sizes: ["S","M","L","XL"]
-        },
-        {
-            id: uuidv4(),
-            name: "Tunisie",
-            price: 90,
-            recto: Tunisie,
-            verso: TunisieVerso,
+            description: "Maillot officiel pour homme de l'équipe de l'Ajax d'Amsterdam.",
             sizes: ["S","M","L","XL"]
         },
     ],
@@ -234,6 +171,7 @@ export const data = {
             price: 90,
             recto: Espagne,
             verso: EspagneVerso,
+            description: "Maillot officiel pour homme de l'équipe national d'Espagne.",
             sizes: ["S","M","L","XL"]
         },
         {
@@ -242,6 +180,7 @@ export const data = {
             price: 90,
             recto: France,
             verso: FranceVerso,
+            description: "Maillot officiel pour homme de l'équipe national de France.",
             sizes: ["S","M","L","XL"]
             },
         {
@@ -250,24 +189,18 @@ export const data = {
             price: 90,
             recto: FranceExterieur,
             verso: FranceExterieurVerso,
+            description: "Maillot officiel pour homme de l'équipe national de France.",
             sizes: ["S","M","L","XL"]
         },
     ],
     afrique: [
         {
             id: uuidv4(),
-            name: "Algérie",
-            price: 90,
-            recto: Algerie,
-            verso: AlgerieVerso,
-            sizes: ["S","M","L","XL"]
-        }, 
-        {
-            id: uuidv4(),
             name: "Cameroun",
             price: 90,
             recto: Cameroun,
             verso: CamerounVerso,
+            description: "Maillot officiel pour homme de l'équipe national du Cameroun.",
             sizes: ["S","M","L","XL"]
         },
         {
@@ -276,14 +209,7 @@ export const data = {
             price: 90,
             recto: CoteIvoire,
             verso: CoteIvoireVerso,
-            sizes: ["S","M","L","XL"]
-        },
-        {
-            id: uuidv4(),
-            name: "Maroc",
-            price: 90,
-            recto: Maroc,
-            verso: MarocVerso,
+            description: "Maillot officiel pour homme de l'équipe national de la Côte d'Ivoire.",
             sizes: ["S","M","L","XL"]
         },
         {
@@ -292,14 +218,34 @@ export const data = {
             price: 90,
             recto: Senegal,
             verso: SenegalVerso,
+            description: "Maillot officiel pour homme de l'équipe national du Sénégal.",
             sizes: ["S","M","L","XL"]
-        },       
+        },
+        {
+            id: uuidv4(),
+            name: "Algérie",
+            price: 90,
+            recto: Algerie,
+            verso: AlgerieVerso,
+            description: "Maillot officiel pour homme de l'équipe national de l'Algérie.",
+            sizes: ["S","M","L","XL"]
+        }, 
+        {
+            id: uuidv4(),
+            name: "Maroc",
+            price: 90,
+            recto: Maroc,
+            verso: MarocVerso,
+            description: "Maillot officiel pour homme de l'équipe national du Maroc.",
+            sizes: ["S","M","L","XL"]
+        },
         {
             id: uuidv4(),
             name: "Tunisie",
             price: 90,
             recto: Tunisie,
             verso: TunisieVerso,
+            description: "Maillot officiel pour homme de l'équipe national de la Tunisie.",
             sizes: ["S","M","L","XL"]
         },
     ],

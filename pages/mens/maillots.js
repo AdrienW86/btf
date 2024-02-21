@@ -116,6 +116,7 @@ export default function maillots() {
                         price={el.price}
                         link={el.link}
                         sizes={el.sizes} 
+                        description={el.description}
                         selectedSize={selectedSize}
                         onSizeChange={(size) => setSelectedSize(size)}
                     /> 
@@ -142,6 +143,7 @@ export default function maillots() {
                         price={el.price}
                         link={el.link}
                         sizes={el.sizes} 
+                        description={el.description}
                         selectedSize={selectedSize}
                         onSizeChange={(size) => setSelectedSize(size)}
                     /> 
@@ -168,6 +170,7 @@ export default function maillots() {
                         price={el.price}
                         link={el.link}
                         sizes={el.sizes} 
+                        description={el.description}
                         selectedSize={selectedSize}
                         onSizeChange={(size) => setSelectedSize(size)}
                     /> 
@@ -194,6 +197,7 @@ export default function maillots() {
                         price={el.price}
                         link={el.link}
                         sizes={el.sizes} 
+                        description={el.description}
                         selectedSize={selectedSize}
                         onSizeChange={(size) => setSelectedSize(size)}
                     /> 
@@ -220,6 +224,7 @@ export default function maillots() {
                         price={el.price}
                         link={el.link}
                         sizes={el.sizes} 
+                        description={el.description}
                         selectedSize={selectedSize}
                         onSizeChange={(size) => setSelectedSize(size)}
                     /> 
@@ -237,6 +242,7 @@ export default function maillots() {
                         price={el.price}
                         link={el.link}
                         sizes={el.sizes} 
+                        description={el.description}
                         selectedSize={selectedSize}
                         onSizeChange={(size) => setSelectedSize(size)}
                     /> 
@@ -263,6 +269,7 @@ export default function maillots() {
                         price={el.price}
                         link={el.link}
                         sizes={el.sizes} 
+                        description={el.description}
                         selectedSize={selectedSize}
                         onSizeChange={(size) => setSelectedSize(size)}
                     /> 
@@ -289,6 +296,7 @@ export default function maillots() {
                         price={el.price}
                         link={el.link}
                         sizes={el.sizes} 
+                        description={el.description}
                         selectedSize={selectedSize}
                         onSizeChange={(size) => setSelectedSize(size)}
                     /> 
