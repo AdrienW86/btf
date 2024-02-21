@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import Image from 'next/image'
 import Banner from '@/assets/women.jpg'
+import PaymentBanner from '@/components/PaymentBanner/PaymentBanner'
 import Liga from '@/assets/liga.png'
 import Ligue1 from '@/assets/ligue1.png'
 import SerieA from '@/assets/serieA.png'
@@ -10,7 +11,7 @@ import Caf from '@/assets/caf.png'
 import Uefa from '@/assets/uefa.png'
 import CardWomen from '@/components/Card/CardWomen'
 import { data } from '@/data/maillots'
-import styles from './mens.module.css'
+import styles from '@/styles/mens.module.css'
 
 export default function maillots() {
     const [selectedSection, setSelectedSection] = useState('');
@@ -294,7 +295,8 @@ export default function maillots() {
                     /> 
                 ))}              
             </div> 
-        </section>            
+        </section> 
+        <PaymentBanner/> 
     </section>
   )
 }

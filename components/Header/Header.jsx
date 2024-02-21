@@ -171,7 +171,7 @@ useEffect(() => {
        </li> 
        <li className={styles.menu_link}>
          <div>
-         <Link href='/kids' className={styles.link} onClick={handleMenuToggle}> 
+         <Link href='/juniors' className={styles.link} onClick={handleMenuToggle}> 
              <p className={styles.linkText}> JUNIORS </p> 
              <Image 
                src={Child}

@@ -69,7 +69,6 @@ export default function ProductDetails() {
     alert('Le produit a bien été ajouté au panier');
   };
 
-  // Affichez les détails de l'article
   return (
     <div className={styles.container}>
       <section className={styles.banner}>                    
