@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Card from '@/components/Card/Card';
-import Support from '@/components/Card/Card';
+import PaymentBanner from '@/components/PaymentBanner/PaymentBanner'
 import Banner from '@/assets/survet.jpg';
 import { data } from '@/data/sportswer';
 import Link from 'next/link';

@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import Image from 'next/image'
 import Banner from '@/assets/kids.jpg'
+import PaymentBanner from '@/components/PaymentBanner/PaymentBanner'
 import Liga from '@/assets/liga.png'
 import Ligue1 from '@/assets/ligue1.png'
 import SerieA from '@/assets/serieA.png'

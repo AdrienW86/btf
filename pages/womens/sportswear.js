@@ -1,11 +1,12 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Card from '@/components/Card/Card'
 import Banner from '@/assets/survet-women.png'
+import PaymentBanner from '@/components/PaymentBanner/PaymentBanner'
 import {data} from '@/data/sportswer'
 import Link from 'next/link';
 import styles from '@/styles/mens.module.css';
-import PaymentBanner from '@/components/PaymentBanner/PaymentBanner'
+
 
 export default function sportswear() {
   const [selectedSize, setSelectedSize] = useState('');
