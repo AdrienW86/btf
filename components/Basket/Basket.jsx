@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Delivery from '@/assets/livraison.png';
 import styles from './basket.module.css';
 import { loadStripe } from '@stripe/stripe-js';
+import PaymentBanner from '../PaymentBanner/PaymentBanner';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -113,7 +114,7 @@ console.log(productsWithDelivery)
   };
 
   const calculateDeliveryCost = () => {
-    let totalCost = calculateTotalAmount() > 50 ? 0 : 5
+    let totalCost = calculateTotalAmount() > 100 ? 0 : 8
     return totalCost;
   };
 
@@ -129,8 +130,7 @@ console.log(productsWithDelivery)
         {products.length === 0 ? (
           <div className={styles.warning}>Vous n'avez aucun produit dans votre panier</div>
         ) : (
-          <div className={styles.container}>
-            <h3 className={styles.h3}> Livraison offerte à partir de 50 € d'achats </h3>
+          <div >
             {getUniqueProducts().map((el, index) => (
               <div key={index} className={styles.product}>
                 <button onClick={() => deleteAllCart(el)} className={styles.close}>
@@ -145,13 +145,15 @@ console.log(productsWithDelivery)
                   <button onClick={() => addToCart(el)} className={styles.addBtn}>
                     +
                   </button>
+                  <div className={styles.boxPicture}>
                   <Image
                     className={styles.picture}
                     src={el.recto}
-                    height={100}
-                    width={100}
+                    fill
+                    priority       
                     alt='image produit'
                   />
+                  </div>
                   <button onClick={() => deleteToCart(el)} className={styles.removeBtn}>
                     -
                   </button>
@@ -165,17 +167,14 @@ console.log(productsWithDelivery)
                 </div>
               </div>
             ))}
-            <div className={styles.delivery}>
-              <Image className={styles.picture} src={Delivery} height={100} width={100} alt='image produit' />
+            <div className={styles.delivery}>        
               <p className={styles.p}>
                 Livraison :
                 <span className={styles.spanTotal2}> {deliveryCost}€ </span>
               </p>
-            </div>
-            <p className={styles.warningDelivery}> entre 2 à 5 jours ouvrés selon les stocks *</p>
-            
+            </div>           
             <div className={styles.productPriceTotal}>
-              <p>
+              <p className={styles.totalAmount}>
                 Montant total de la commande : <br></br>
                 <span className={styles.spanTotal}> {total + deliveryCost} € </span>
               </p>
@@ -185,10 +184,10 @@ console.log(productsWithDelivery)
                 {isLoading ? 'Chargement...' : 'Valider'}
               </button>
             </div>
-            <p className={styles.warningDelivery}> * en cas de rupture de stock, le délai de livraison sera compris entre 2 à 3 semaines.</p>
+            <p className={styles.warningDelivery}> * en cas de rupture de stock, le délai de livraison sera compris entre 2 à 5 semaines.</p>
           </div>
         )}
-       
+       <PaymentBanner />
       </section>
     </div>
   );

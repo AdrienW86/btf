@@ -13,6 +13,8 @@ import Socket from '@/assets/yellow.jpg';
 import Balm from '@/assets/tiger-red.webp';
 import Delivery from "@/assets/livraison.png";
 import Search from "@/assets/search.png"
+import Finder from "@/components/Finder/Finder"
+import {data} from '@/data/search'
 import styles from './header.module.css';
 
 export default function Header() {
@@ -22,6 +24,23 @@ const [prevScrollPos, setPrevScrollPos] = useState(0);
 const [visible, setVisible] = useState(true);
 const [productsLength, setProductsLength] = useState(0);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+const [searchQuery, setSearchQuery] = useState('');
+const [searchResults, setSearchResults] = useState([]);
+
+const [toggle, setToggle] = useState(false)
+
+const isToggle = () => {
+  setToggle(!toggle)
+}
+
+const handleSearch = () => {
+  const results = data.filter((item) =>
+    item.content.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  setSearchResults(results);
+  isToggle()
+};
 
 const handleMenuToggle = () => {
   setIsMenuOpen(!isMenuOpen);
@@ -110,15 +129,19 @@ useEffect(() => {
       <section className={styles.title}> 
         <div className={styles.inputContainer}>
           <input 
+            type='text'
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             className={styles.input} 
             placeholder="Rechercher un produit, une catégorie..."
           />
           <div className={styles.imgBox}>
             <Image 
               src={Search}
-              alt="Description de l'image"
+              alt="Rechercher"
               height={20}
               width={20}
+              onClick={handleSearch}
             />
           </div>         
         </div>
@@ -138,6 +161,11 @@ useEffect(() => {
         </li>      
       </Link>
     </header>
+    {toggle &&
+    <Finder 
+      results={searchResults}
+      toggle={isToggle} />
+    }
     <section className={`${styles.menuBox} ${isMenuOpen ? styles.menuBoxOpen : ''}`}>
     {isMenuOpen && (      
        <ul className={styles.menu}>

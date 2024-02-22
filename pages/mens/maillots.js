@@ -111,6 +111,7 @@ export default function maillots() {
                     <Card 
                         key={index}
                         id={el.id}
+                        anchor={`men-${el.anchor}`}
                         name={el.name}
                         recto={el.recto}
                         verso={el.verso}

@@ -1,64 +1,69 @@
-import White from '@/assets/whitesocket.jpg'
-import Grey from '@/assets/greysocket.jpg'
-import Black from '@/assets/socketblack.jpg'
-import IceBlue from '@/assets/icebluesocket.jpg'
-import Yellow from '@/assets/greenyellowsocket.jpg'
-import Green from '@/assets/greensocket.jpg'
-import Purple from '@/assets/purplesocket2.jpg'
-import Orange from '@/assets/orangesocket.jpg'
 import { v4 as uuidv4 } from 'uuid';
 
-export const data = [
+export const data = 
     {
-        socket: [
+        tapedesign: [
             {
                 id: uuidv4(),
-                name: "Chaussettes de Football blanches 39/45",
+                name: "Tapedesign blanches 39/45",
                 price: 6,
-                recto: White,      
+                recto: '/sockets/tapedesign-white.png',      
             },
             {
                 id: uuidv4(),
                 name: "Chaussettes de Football grises 39/45",
                 price: 6,
-                recto: Grey,     
+                recto: '/sockets/tapedesign-white.png',   
             },
             {
                 id: uuidv4(),
                 name: "Chaussettes de Football noires 39/45",
                 price: 6,
-                recto: Black,     
+                recto: '/sockets/tapedesign-white.png',     
             },
             {
                 id: uuidv4(),
                 name: "Chaussettes de Football bleues claires 39/45",
                 price: 6,
-                recto: IceBlue,      
+                recto: '/sockets/tapedesign-white.png',  
             },
             {
                 id: uuidv4(),
                 name: "Chaussettes de Football vertes claires 39/45",
                 price: 6,
-                recto: Yellow,     
+                recto: '/sockets/tapedesign-white.png',    
             },
             {
                 id: uuidv4(),
                 name: "Chaussettes de Football vertes 39/45",
                 price: 6,
-                recto: Green,     
+                recto: '/sockets/tapedesign-white.png',  
             },
             {
                 id: uuidv4(),
                 name: "Chaussettes de Football violettes 39/45",
                 price: 6,
-                recto: Purple,     
+                recto: '/sockets/tapedesign-white.png',    
             },
             {
                 id: uuidv4(),
                 name: "Chaussettes de Football oranges 39/45",
                 price: 6,
-                recto: Orange,     
+                recto: '/sockets/tapedesign-white.png',    
             },
-           ]
+        ],
+        bf: [
+            {
+                id: uuidv4(),
+                name: "Chaussettes blanches BF 39/45",
+                price: 6,
+                recto: '/sockets/bf-white.png',      
+            },
+            {
+                id: uuidv4(),
+                name: "Chaussettes noires BF 39/45",
+                price: 6,
+                recto: '/sockets/bf-black.png',   
+            },
+        ],
     }
-]

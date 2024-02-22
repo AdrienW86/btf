@@ -30,7 +30,7 @@ export default function CategoryMaillots() {
                 <Link className={styles.btn} href="/womens/maillots"> Les maillots femmes </Link>                       
                 <Link className={styles.btn} href="/juniors/maillots"> Les maillots enfants</Link>          
         </div>
-        <div className={styles.category}>
+        <div id="maillotshommes" className={styles.category}>
             <Link href="/mens/maillots">
                 <section className={styles.banner}>       
                     <h3 className={styles.h2}> Les Maillots Hommes </h3>
@@ -47,10 +47,10 @@ export default function CategoryMaillots() {
                 <p className={styles.link}> Découvrir </p>
             </Link>         
         </div>
-        <div className={styles.category}>
+        <div id="maillotsfemmes" className={styles.category}>
             <Link href="/womens/maillots">
                 <section className={styles.banner}>       
-                    <h3 className={styles.h2}> Les Maillots Femmes</h3>
+                    <h3  className={styles.h2}> Les Maillots Femmes</h3>
                     <p className={styles.description}> Livraison rapide. Paiement sécurisé. </p>
                     <Image 
                         src={Banner3}
@@ -64,7 +64,7 @@ export default function CategoryMaillots() {
                 <p className={styles.link}> Découvrir </p>
             </Link>       
         </div>
-        <div className={styles.category}>
+        <div id="maillotsjuniors" className={styles.category}>
             <Link href="/juniors/maillots">
                 <section className={styles.banner}>       
                     <h3 className={styles.h2}> Les Maillots Juniors </h3>

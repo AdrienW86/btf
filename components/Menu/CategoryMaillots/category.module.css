@@ -14,7 +14,6 @@
     aspect-ratio: 3/3;
     max-height: 100vh;
     margin-bottom: 40px;
-    filter: brightness(70%) grayscale(0%);
 }
 
 .banner {
@@ -24,6 +23,11 @@
     overflow: hidden;
     aspect-ratio: 3/3;
     max-height: 100vh;
+}
+
+.banner:hover {
+    cursor: pointer;
+    filter: brightness(70%) grayscale(0%);
 }
 
 .h1 {

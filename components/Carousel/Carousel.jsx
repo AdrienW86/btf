@@ -72,7 +72,7 @@ function CustomSlider() {
           <p className={styles.p}> Découvrir la collection femmes</p> 
         </div>
       </Link>
-      <Link href="/kids">
+      <Link href="/juniors">
         <div className={styles.section}>
           <div className={styles.card}>
             <Image 

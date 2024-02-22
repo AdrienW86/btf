@@ -47,6 +47,7 @@ export const data = {
     [
         {
             id: uuidv4(),
+            anchor: "lyon",
             name: "Olympique de Lyon",
             price: 90,
             recto: Lyon,
@@ -56,6 +57,7 @@ export const data = {
         },  
         {
             id: uuidv4(),
+            anchor: "paris",
             name: "Paris Saint-Germain",
             price: 90,
             recto: Paris,
@@ -65,6 +67,7 @@ export const data = {
         },
         {
             id: uuidv4(),
+            anchor: "marseille",
             name: "Olympique de Marseille",
             price: 90,
             recto: Marseille,
@@ -76,6 +79,7 @@ export const data = {
     premierLeague: [
         {
             id: uuidv4(),
+            anchor: "arsenal",
             name: "Arsenal",
             price: 90,
             recto: Arsenal,
@@ -85,6 +89,7 @@ export const data = {
         },   
         {
             id: uuidv4(),
+            anchor: "manchester-city",
             name: "Manchester City",
             price: 90,
             recto: ManchesterCity,
@@ -94,6 +99,7 @@ export const data = {
         }, 
         {
             id: uuidv4(),
+            anchor: "manchester-united",
             name: "Manchester United",
             price: 90,
             recto: ManchesterUnited,
@@ -105,6 +111,7 @@ export const data = {
     serieA: [
         {
             id: uuidv4(),
+            anchor: "inter",
             name: "Inter de Milan",
             price: 90,
             recto: InterMilan,
@@ -114,6 +121,7 @@ export const data = {
         },
         {
             id: uuidv4(),
+            anchor: "juventus",
             name: "Juventus",
             price: 90,
             recto: Juventus,
@@ -125,6 +133,7 @@ export const data = {
     liga: [
         {
             id: uuidv4(),
+            anchor: "real",
             name: "Real Madrid",
             price: 90,
             recto: Madrid,
@@ -134,6 +143,7 @@ export const data = {
         },
         {
             id: uuidv4(),
+            anchor: "barcelone",
             name: "FC Barcelone",
             price: 90,
             recto: Barcelone,
@@ -145,6 +155,7 @@ export const data = {
     bundesliga: [
         {
             id: uuidv4(),
+            anchor: "bayern",
             name: "Bayern de Munich",
             price: 90,
             recto: Bayern,
@@ -156,6 +167,7 @@ export const data = {
     others: [
         {
             id: uuidv4(),
+            anchor: "amsterdam",
             name: "Ajax Amsterdam",
             price: 90,
             recto: Ajax,
@@ -167,6 +179,7 @@ export const data = {
     europe: [
         {
             id: uuidv4(),
+            anchor: "espagne",
             name: "Espagne",
             price: 90,
             recto: Espagne,
@@ -176,6 +189,7 @@ export const data = {
         },
         {
             id: uuidv4(),
+            anchor: "france",
             name: "France (Domicile)",
             price: 90,
             recto: France,
@@ -185,6 +199,7 @@ export const data = {
             },
         {
             id: uuidv4(),
+            anchor: "france-exterieur",
             name: "France (Extérieur)",
             price: 90,
             recto: FranceExterieur,
@@ -196,6 +211,7 @@ export const data = {
     afrique: [
         {
             id: uuidv4(),
+            anchor: "cameroun",
             name: "Cameroun",
             price: 90,
             recto: Cameroun,
@@ -205,6 +221,7 @@ export const data = {
         },
         {
             id: uuidv4(),
+            anchor: "ivoire",
             name: "Côte d'Ivoire",
             price: 90,
             recto: CoteIvoire,
@@ -214,6 +231,7 @@ export const data = {
         },
         {
             id: uuidv4(),
+            anchor: "senegal",
             name: "Sénégal",
             price: 90,
             recto: Senegal,
@@ -223,6 +241,7 @@ export const data = {
         },
         {
             id: uuidv4(),
+            anchor: "algerie",
             name: "Algérie",
             price: 90,
             recto: Algerie,
@@ -232,6 +251,7 @@ export const data = {
         }, 
         {
             id: uuidv4(),
+            anchor: "maroc",
             name: "Maroc",
             price: 90,
             recto: Maroc,
@@ -241,6 +261,7 @@ export const data = {
         },
         {
             id: uuidv4(),
+            anchor: "tunisie",
             name: "Tunisie",
             price: 90,
             recto: Tunisie,

@@ -12,10 +12,10 @@ import styles from './category.module.css'
 export default function Category() {
   return (
     <>
-      <h1 className={styles.title}> NOS COLLECTIONS </h1>
+      <h1 id="collection" className={styles.title}> NOS COLLECTIONS </h1>
         <Carousel />
           <Link href="/maillots">
-            <h2 className={styles.title2}> LES MAILLOTS </h2>     
+            <h2 id="maillots" className={styles.title2}> LES MAILLOTS </h2>     
               <section className={styles.banner}>
                 <Image 
                   src={Banner1}
@@ -26,7 +26,7 @@ export default function Category() {
               </section>
           </Link>
       <Link href="/sockets"> 
-        <h2 className={styles.title2}> LES CHAUSSETTES </h2>     
+        <h2 id="chaussettes"  className={styles.title2}> LES CHAUSSETTES </h2>     
           <section className={styles.banner}>
             <Image 
               src={Banner2}

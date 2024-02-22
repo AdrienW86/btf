@@ -106,32 +106,34 @@ export default function ProductDetails() {
         >       
         </button>
       </div>
+      {product.sizes !== "null" &&
        <div className={styles.box}>
-    <button 
-      className={selectedSize === 'S' ? `${styles.sizeButton} ${styles.active}` : styles.sizeButton}
-      onClick={() => setSelectedSize('S')}
-    >
-      S
-    </button>
-    <button 
-      className={selectedSize === 'M' ? `${styles.sizeButton} ${styles.active}` : styles.sizeButton}
-      onClick={() => setSelectedSize('M')}
-    >
-      M
-    </button>
-    <button 
-      className={selectedSize === 'L' ? `${styles.sizeButton} ${styles.active}` : styles.sizeButton}
-      onClick={() => setSelectedSize('L')}
-    >
-      L
-    </button>
-    <button 
-      className={selectedSize === 'XL' ? `${styles.sizeButton} ${styles.active}` : styles.sizeButton}
-      onClick={() => setSelectedSize('XL')}
-    >
-      XL
-    </button>
-  </div>
+        <button 
+          className={selectedSize === 'S' ? `${styles.sizeButton} ${styles.active}` : styles.sizeButton}
+          onClick={() => setSelectedSize('S')}
+        >
+        S
+        </button>
+        <button 
+          className={selectedSize === 'M' ? `${styles.sizeButton} ${styles.active}` : styles.sizeButton}
+          onClick={() => setSelectedSize('M')}
+        >
+          M
+        </button>
+        <button 
+          className={selectedSize === 'L' ? `${styles.sizeButton} ${styles.active}` : styles.sizeButton}
+          onClick={() => setSelectedSize('L')}
+        >
+          L
+        </button>
+        <button 
+          className={selectedSize === 'XL' ? `${styles.sizeButton} ${styles.active}` : styles.sizeButton}
+          onClick={() => setSelectedSize('XL')}
+        >
+          XL
+        </button>
+       </div>
+      }
       <h1 className={styles.h1}>{name}</h1>
       <p className={styles.description}>{description}</p>
       <p className={styles.price}>Prix: {price}€</p>

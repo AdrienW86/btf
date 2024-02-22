@@ -8,7 +8,7 @@ export default function Card(props) {
   }
   console.log(props.name)
   return (
-  <div className={styles.card} >        
+  <div id={props.anchor} className={styles.card} >        
     <section className={styles.banner}>       
       <Image 
         src={props.recto}
