@@ -40,8 +40,16 @@ const handleSearch = () => {
     item.content.toLowerCase().includes(searchQuery.toLowerCase())
   );
   setSearchResults(results);
-  isToggle()
+  isToggle();
 };
+
+const handleKeyPress = (event) => {
+  if (event.key === 'Enter') {
+    handleSearch();
+  }
+};
+
+
 
 const handleMenuToggle = () => {
   setIsMenuOpen(!isMenuOpen);
@@ -134,6 +142,7 @@ useEffect(() => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className={styles.input} 
+            onKeyPress={handleKeyPress} 
             placeholder="Rechercher un produit, une catégorie..."
           />
           <div className={styles.imgBox}>
