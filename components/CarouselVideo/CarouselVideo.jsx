@@ -13,8 +13,8 @@ function CustomSlider() {
     slidesToScroll: 1,
     swipeToSlide: true,
     touchThreshold: 10,
-    centerMode: true, // Active le mode centré
-    centerPadding: '65px', // Ajuste l'espace entre les éléments
+    centerMode: true, 
+    centerPadding: '65px',
     responsive: [
       {
         breakpoint: 1024,
@@ -73,7 +73,7 @@ function CustomSlider() {
         Votre navigateur ne supporte pas la lecture de vidéos au format MP4.
       </video>
         </div>
-        <h3 className={styles.h3}> COLLECTION TUNISIE</h3>
+        <h3 className={styles.h3}> COFFRET TUNISIE</h3>
         <p className={styles.p}> Découvrir la sélection de Tounsi</p>
       </div>
     </Slider>

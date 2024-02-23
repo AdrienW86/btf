@@ -35,7 +35,7 @@ export default function TapeDesign() {
               recto={el.recto}
               price={el.price}              
               description={el.description}             
-            />    
+            />   
           </Link>
         </div>
       ))}

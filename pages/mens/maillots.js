@@ -337,7 +337,8 @@ export default function maillots() {
                     </div>
                 ))}              
             </div> 
-        </section>            
+        </section>    
+        <PaymentBanner />        
     </section>
   )
 }
