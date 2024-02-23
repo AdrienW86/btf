@@ -36,7 +36,7 @@ export default function Category() {
             />  
           </section>
       </Link>
-      <Link href="/boxs">
+      <Link href="/balms">
         <h2 className={styles.title2}> LES BAUMES </h2>    
           <section className={styles.banner}>
             <Image 

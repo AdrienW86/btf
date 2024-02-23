@@ -37,7 +37,6 @@ export default function ProductDetails() {
   const [products, setProducts] = useState([]);
 
   const toggleModal = () => {
-    console.log("test")
     setIsModalOpen(!isModalOpen);
   };
 
@@ -100,11 +99,13 @@ export default function ProductDetails() {
           onClick={() => toggleImage(recto, 'recto')}
         >             
         </button>
-        <button 
-          className={activeButton === 'verso' ? styles.activeButton : styles.button}
-          onClick={() => toggleImage(verso, 'verso')}
-        >       
-        </button>
+        {product.verso !== "null" &&
+          <button 
+            className={activeButton === 'verso' ? styles.activeButton : styles.button}
+            onClick={() => toggleImage(verso, 'verso')}
+          >       
+          </button>
+        }
       </div>
       {product.sizes !== "null" &&
        <div className={styles.box}>

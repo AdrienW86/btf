@@ -135,7 +135,7 @@
 
 .addBtn:hover, .removeBtn:hover {
     cursor: pointer;
-  }
+}
 
 .total {
     text-align: center;
@@ -207,6 +207,7 @@
 
 .validate:hover {
     cursor: pointer;
+    filter: brightness(70%) grayscale(0%);
 }
 
 .productPriceTotal {

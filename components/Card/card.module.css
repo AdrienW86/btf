@@ -19,7 +19,7 @@
   padding: 0 5%;
   transition: .4s ease-in-out;
   overflow: hidden;
-  aspect-ratio: 2/3;
+  aspect-ratio: 4/3;
   max-height: 100vh;
 }
 

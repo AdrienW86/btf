@@ -32,10 +32,8 @@ export default function TBalm() {
               id={el.id}
               name={el.name}
               recto={el.recto}
-              price={el.price}
-              
-              //description={el.description}
-             
+              price={el.price}             
+              description={el.description}             
             />    
           </Link>
         </div>

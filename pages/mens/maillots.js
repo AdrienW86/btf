@@ -11,28 +11,28 @@ import Caf from '@/assets/caf.png'
 import Uefa from '@/assets/uefa.png'
 import Card from '@/components/Card/Card'
 import { data } from '@/data/maillots'
+import Link from 'next/link'
 import styles from '@/styles/mens.module.css'
 
 export default function maillots() {
     const [selectedSection, setSelectedSection] = useState('');
-  const [showScrollButton, setShowScrollButton] = useState(false);
-  const [selectedSize, setSelectedSize] = useState('');
-  const handleDropdownChange = (event) => {
-    setSelectedSection(event.target.value);
-    scrollToSection(event.target.value);
-  };
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 0; 
-      const offsetPosition = element.offsetTop - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
-  };
+    const [showScrollButton, setShowScrollButton] = useState(false);
+    const [selectedSize, setSelectedSize] = useState('');
+    const handleDropdownChange = (event) => {
+        setSelectedSection(event.target.value);
+        scrollToSection(event.target.value);
+    };
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const offset = 0; 
+            const offsetPosition = element.offsetTop - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth',
+            });
+        }
+    };
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -53,6 +53,7 @@ export default function maillots() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []); 
+  
   return (
     <section className={styles.container}>    
         <section className={styles.banner}>       
@@ -108,20 +109,24 @@ export default function maillots() {
                     />  
                 </div>       
                 {data.ligue1.map((el, index)=> (
-                    <Card 
-                        key={index}
-                        id={el.id}
-                        anchor={`men-${el.anchor}`}
-                        name={el.name}
-                        recto={el.recto}
-                        verso={el.verso}
-                        price={el.price}
-                        link={el.link}
-                        sizes={el.sizes} 
-                        description={el.description}
-                        selectedSize={selectedSize}
-                        onSizeChange={(size) => setSelectedSize(size)}
-                    /> 
+                    <div className={styles.link}>
+                        <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>     
+                            <Card 
+                                key={index}
+                                id={el.id}
+                                anchor={`men-${el.anchor}`}
+                                name={el.name}
+                                recto={el.recto}
+                                verso={el.verso}
+                                price={el.price}
+                                link={el.link}
+                                sizes={el.sizes} 
+                                description={el.description}
+                                selectedSize={selectedSize}
+                                onSizeChange={(size) => setSelectedSize(size)}
+                            /> 
+                        </Link>
+                    </div>
                 ))}              
             </div>
             <div id="liga" className={styles.cardContainer}> 
@@ -136,19 +141,23 @@ export default function maillots() {
                     />  
                 </div>           
                 {data.liga.map((el, index)=> (
-                    <Card 
-                        key={index}
-                        id={el.id}
-                        name={el.name}
-                        recto={el.recto}
-                        verso={el.verso}
-                        price={el.price}
-                        link={el.link}
-                        sizes={el.sizes} 
-                        description={el.description}
-                        selectedSize={selectedSize}
-                        onSizeChange={(size) => setSelectedSize(size)}
-                    /> 
+                    <div className={styles.link}>
+                        <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>     
+                            <Card 
+                                key={index}
+                                id={el.id}
+                                name={el.name}
+                                recto={el.recto}
+                                verso={el.verso}
+                                price={el.price}
+                                link={el.link}
+                                sizes={el.sizes} 
+                                description={el.description}
+                                selectedSize={selectedSize}
+                                onSizeChange={(size) => setSelectedSize(size)}
+                            /> 
+                        </Link>
+                    </div>
                 ))}              
             </div> 
             <div id="premier" className={styles.cardContainer}> 
@@ -163,19 +172,23 @@ export default function maillots() {
                     />  
                 </div>    
                 {data.premierLeague.map((el, index)=> (
-                    <Card 
-                        key={index}
-                        id={el.id}
-                        name={el.name}
-                        recto={el.recto}
-                        verso={el.verso}
-                        price={el.price}
-                        link={el.link}
-                        sizes={el.sizes} 
-                        description={el.description}
-                        selectedSize={selectedSize}
-                        onSizeChange={(size) => setSelectedSize(size)}
-                    /> 
+                    <div className={styles.link}>
+                        <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}> 
+                            <Card 
+                                key={index}
+                                id={el.id}
+                                name={el.name}
+                                recto={el.recto}
+                                verso={el.verso}
+                                price={el.price}
+                                link={el.link}
+                                sizes={el.sizes} 
+                                description={el.description}
+                                selectedSize={selectedSize}
+                                onSizeChange={(size) => setSelectedSize(size)}
+                            /> 
+                        </Link>
+                    </div>
                 ))}              
             </div> 
             <div id="serieA" className={styles.cardContainer}> 
@@ -190,19 +203,23 @@ export default function maillots() {
                     />  
                 </div>     
                 {data.serieA.map((el, index)=> (
-                    <Card 
-                        key={index}
-                        id={el.id}
-                        name={el.name}
-                        recto={el.recto}
-                        verso={el.verso}
-                        price={el.price}
-                        link={el.link}
-                        sizes={el.sizes} 
-                        description={el.description}
-                        selectedSize={selectedSize}
-                        onSizeChange={(size) => setSelectedSize(size)}
-                    /> 
+                    <div className={styles.link}>
+                        <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}> 
+                            <Card 
+                                key={index}
+                                id={el.id}
+                                name={el.name}
+                                recto={el.recto}
+                                verso={el.verso}
+                                price={el.price}
+                                link={el.link}
+                                sizes={el.sizes} 
+                                description={el.description}
+                                selectedSize={selectedSize}
+                                onSizeChange={(size) => setSelectedSize(size)}
+                            /> 
+                        </Link>
+                    </div>
                 ))}              
             </div> 
             <div id="bundesliga" className={styles.cardContainer}> 
@@ -217,37 +234,45 @@ export default function maillots() {
                     />  
                 </div>     
                 {data.bundesliga.map((el, index)=> (
-                    <Card 
-                        key={index}
-                        id={el.id}
-                        name={el.name}
-                        recto={el.recto}
-                        verso={el.verso}
-                        price={el.price}
-                        link={el.link}
-                        sizes={el.sizes} 
-                        description={el.description}
-                        selectedSize={selectedSize}
-                        onSizeChange={(size) => setSelectedSize(size)}
-                    /> 
+                    <div className={styles.link}>
+                        <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
+                            <Card 
+                                key={index}
+                                id={el.id}
+                                name={el.name}
+                                recto={el.recto}
+                                verso={el.verso}
+                                price={el.price}
+                                link={el.link}
+                                sizes={el.sizes} 
+                                description={el.description}
+                                selectedSize={selectedSize}
+                                onSizeChange={(size) => setSelectedSize(size)}
+                            /> 
+                        </Link>
+                    </div>
                 ))}              
             </div> 
             <div id="others" className={styles.cardContainer}> 
                 <h2 className={styles.h2}> Les autres clubs </h2>      
                 {data.others.map((el, index)=> (
-                    <Card 
-                        key={index}
-                        id={el.id}
-                        name={el.name}
-                        recto={el.recto}
-                        verso={el.verso}
-                        price={el.price}
-                        link={el.link}
-                        sizes={el.sizes} 
-                        description={el.description}
-                        selectedSize={selectedSize}
-                        onSizeChange={(size) => setSelectedSize(size)}
-                    /> 
+                    <div className={styles.link}>
+                        <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
+                            <Card 
+                                key={index}
+                                id={el.id}
+                                name={el.name}
+                                recto={el.recto}
+                                verso={el.verso}
+                                price={el.price}
+                                link={el.link}
+                                sizes={el.sizes} 
+                                description={el.description}
+                                selectedSize={selectedSize}
+                                onSizeChange={(size) => setSelectedSize(size)}
+                            /> 
+                        </Link>
+                    </div>
                 ))}              
             </div> 
             <div id="afrique" className={styles.cardContainer}> 
@@ -262,19 +287,23 @@ export default function maillots() {
                     />  
                 </div>     
                 {data.afrique.map((el, index)=> (
-                    <Card 
-                        key={index}
-                        id={el.id}
-                        name={el.name}
-                        recto={el.recto}
-                        verso={el.verso}
-                        price={el.price}
-                        link={el.link}
-                        sizes={el.sizes} 
-                        description={el.description}
-                        selectedSize={selectedSize}
-                        onSizeChange={(size) => setSelectedSize(size)}
-                    /> 
+                    <div className={styles.link}>
+                        <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
+                            <Card 
+                                key={index}
+                                id={el.id}
+                                name={el.name}
+                                recto={el.recto}
+                                verso={el.verso}
+                                price={el.price}
+                                link={el.link}
+                                sizes={el.sizes} 
+                                description={el.description}
+                                selectedSize={selectedSize}
+                                onSizeChange={(size) => setSelectedSize(size)}
+                            /> 
+                        </Link>
+                    </div>
                 ))}              
             </div> 
             <div id="europe" className={styles.cardContainer}> 
@@ -289,19 +318,23 @@ export default function maillots() {
                     />  
                 </div>      
                 {data.europe.map((el, index)=> (
-                    <Card 
-                        key={index}
-                        id={el.id}
-                        name={el.name}
-                        recto={el.recto}
-                        verso={el.verso}
-                        price={el.price}
-                        link={el.link}
-                        sizes={el.sizes} 
-                        description={el.description}
-                        selectedSize={selectedSize}
-                        onSizeChange={(size) => setSelectedSize(size)}
-                    /> 
+                    <div className={styles.link}>
+                        <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
+                            <Card 
+                                key={index}
+                                id={el.id}
+                                name={el.name}
+                                recto={el.recto}
+                                verso={el.verso}
+                                price={el.price}
+                                link={el.link}
+                                sizes={el.sizes} 
+                                description={el.description}
+                                selectedSize={selectedSize}
+                                onSizeChange={(size) => setSelectedSize(size)}
+                            />                        
+                        </Link>
+                    </div>
                 ))}              
             </div> 
         </section>            

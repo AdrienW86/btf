@@ -105,7 +105,7 @@ console.log(productsWithDelivery)
   };
   
   const calculateTotalAmount = () => {
-    const uniqueProducts = getUniqueProducts();
+    const uniqueProducts = products;
     let totalAmount = 0;
     uniqueProducts.forEach((el) => {
       totalAmount += el.quantity * el.price;
@@ -123,6 +123,8 @@ console.log(productsWithDelivery)
     setDeliveryCost(calculateDeliveryCost())    
   }, [products]);
 
+  console.log(getUniqueProducts())
+  console.log(products)
   return (
     <div className={styles.container}>
       <h2 className={styles.h2}>Votre panier</h2>
@@ -131,7 +133,7 @@ console.log(productsWithDelivery)
           <div className={styles.warning}>Vous n'avez aucun produit dans votre panier</div>
         ) : (
           <div >
-            {getUniqueProducts().map((el, index) => (
+            {products.map((el, index) => (
               <div key={index} className={styles.product}>
                 <button onClick={() => deleteAllCart(el)} className={styles.close}>
                   X
