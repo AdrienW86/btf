@@ -32,6 +32,7 @@ const [toggle, setToggle] = useState(false)
 
 const isToggle = () => {
   setToggle(!toggle)
+  setIsMenuOpen(false)
 }
 
 const handleSearch = () => {

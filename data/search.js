@@ -29,7 +29,7 @@ export const data = [
     {
         url: '/sockets',
         title: 'Chaussettes',
-        content: 'chaussettes, maillots'
+        content: 'chaussettes, chaussette, tapedesign'
     },  
     {
         url: '/mens/maillots#lyon',
