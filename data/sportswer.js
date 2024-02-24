@@ -35,7 +35,7 @@ export const data = {
             name: "Survêtement Coutures Brutes BF",
             price: 85,
             recto: '/survet_hommes/survet-bf-kaki2.png',
-            verso: '/survet_hommes/survet-bf-kaki2.png',
+            verso: '/survet_hommes/survet-bf-kaki.png',
             description: "Ensemble jogging et sweat à capuche en coton (100%) à coutures brutes avec poches kangourou de la collection Boutique Du Foot.",
             sizes: ["S","M","L","XL"]
         },   
@@ -44,28 +44,41 @@ export const data = {
             name: "Survêtement Décontracté BF",
             price: 69,
             recto: '/survet_hommes/survet-bf-noir2.png',
-            verso: '/survet_hommes/survet-bf-noir2.png',
             description: "Ensemble jogging et sweat à capuche en coton (35%) et polyester (65%) de la collection Boutique Du Foot.",
             sizes: ["S","M","L","XL"]
         }, 
         {
             id: uuidv4(),
-            name: "Survêtement Cream",
-            price: 79,
-            recto: '/survet_hommes/survet-beige.png',
-            verso: '/survet_hommes/survet-beige-verso.png',
-            description: "Ensemble jogging et sweat à capuche respirant à séchage rapide en  polyester coton (100%).",
+            name: "Sweat Classique Blanc",
+            price: 39,
+            recto: '/survet_hommes/sweet-homme-blanc.png',
+            description: "Un sweat à capuche classique avec une grande poche avant et des cordons de couleur assortie. Tricoté en molleton pré-rétréci. 50% coton pré-rétréci, 50% polyester.",
             sizes: ["S","M","L","XL"]
         },  
         {
             id: uuidv4(),
-            name: "Survêtement Velours",
-            price: 129,
-            recto: '/survet_hommes/velours.png',
-            verso: '/survet_hommes/velours.png',
-            description: "Ensemble jogging et sweat à capuche anti-bouloche et respirant en velours de coton uni (100%).",
+            name: "Sweat Classique Bleu",
+            price: 39,
+            recto: '/survet_hommes/sweet-homme-bleu.png',
+            description: "Un sweat à capuche classique avec une grande poche avant et des cordons de couleur assortie. Tricoté en molleton pré-rétréci. 50% coton pré-rétréci, 50% polyester.",
             sizes: ["S","M","L","XL"]
-        },        
+        },   
+        {
+            id: uuidv4(),
+            name: "Sweat Classique Rouge",
+            price: 39,
+            recto: '/survet_hommes/sweet-homme-rouge.png',
+            description: "Un sweat à capuche classique avec une grande poche avant et des cordons de couleur assortie. Tricoté en molleton pré-rétréci. 50% coton pré-rétréci, 50% polyester.",
+            sizes: ["S","M","L","XL"]
+        },
+        {
+            id: uuidv4(),
+            name: "Sweat Classique Vert",
+            price: 39,
+            recto: '/survet_hommes/sweet-homme-vert.png',
+            description: "Un sweat à capuche classique avec une grande poche avant et des cordons de couleur assortie. Tricoté en molleton pré-rétréci. 50% coton pré-rétréci, 50% polyester.",
+            sizes: ["S","M","L","XL"]
+        },
     ],
     women: [
         // {
@@ -79,10 +92,9 @@ export const data = {
         // },  
         {
             id: uuidv4(),
-            name: "Survêtement",
+            name: "Sweet Orange à capuche",
             price: 42,
             recto: '/survet_femmes/survet-bf-orange.png',
-            verso: '/survet_femmes/survet-bf-orange.png',
             description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%) de la collection Boutique du Foot.",
             sizes: ["S","M","L","XL"]
         },  
@@ -91,16 +103,14 @@ export const data = {
             name: "Survêtement",
             price: 69,
             recto: '/survet_femmes/survet-brown.png',
-            verso: '/survet_femmes/survet-brown.png',
             description: "Ensemble jogging et sweat à capuche respirant à séchage rapide, léger, anti-transpirant et extensible dans les quatre sens en spandex / coton.",
             sizes: ["S","M","L","XL"]
         },  
         {
             id: uuidv4(),
-            name: "Survêtement sweet",
+            name: "Survêtement Sweet",
             price: 62,
             recto: '/survet_femmes/survet-sexy.png',
-            verso: '/survet_femmes/survet-sexy.png',
             description: "Ensemble jogging et sweat à capuche en spandex / polyester.",
             sizes: ["S","M","L","XL"]
         },  
@@ -127,10 +137,41 @@ export const data = {
             name: "Ensemble",
             price: 62,
             recto: '/survet_femmes/survet-polaire.png',
-            verso: '/survet_femmes/survet-polaire.png',
             description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%).",
             sizes: ["S","M","L","XL"]
         },  
+        {
+            id: uuidv4(),
+            name: "Sweat Classique Orange",
+            price: 39,
+            recto: '/survet_femmes/sweet-femme-orange.png',
+            description: "Un sweat à capuche classique avec une grande poche avant et des cordons de couleur assortie. Tricoté en molleton pré-rétréci. 50% coton pré-rétréci, 50% polyester.",
+            sizes: ["S","M","L","XL"]
+        },
+        {
+            id: uuidv4(),
+            name: "Sweat Classique Blanc",
+            price: 39,
+            recto: '/survet_femmes/sweet-femme-blanc.png',
+            description: "Un sweat à capuche classique avec une grande poche avant et des cordons de couleur assortie. Tricoté en molleton pré-rétréci. 50% coton pré-rétréci, 50% polyester.",
+            sizes: ["S","M","L","XL"]
+        },
+        {
+            id: uuidv4(),
+            name: "Sweat Classique Rose",
+            price: 39,
+            recto: '/survet_femmes/sweet-femme-rose.png',
+            description: "Un sweat à capuche classique avec une grande poche avant et des cordons de couleur assortie. Tricoté en molleton pré-rétréci. 50% coton pré-rétréci, 50% polyester.",
+            sizes: ["S","M","L","XL"]
+        },
+        {
+            id: uuidv4(),
+            name: "Sweat Classique Rouge",
+            price: 39,
+            recto: '/survet_femmes/sweet-femme-rouge.png',
+            description: "Un sweat à capuche classique avec une grande poche avant et des cordons de couleur assortie. Tricoté en molleton pré-rétréci. 50% coton pré-rétréci, 50% polyester.",
+            sizes: ["S","M","L","XL"]
+        },
     ],
     juniors: [
         {

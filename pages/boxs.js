@@ -24,7 +24,7 @@ export default function boxs() {
             className={styles.background}
           />  
         </section> 
-        <h2 className={styles.h2}> Composez et recevez vous aussi votre coffret </h2>
+        <h2 className={styles.h2}> La sélection du mois </h2>
                  
           <CarouselVideo />
        

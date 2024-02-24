@@ -103,8 +103,6 @@ console.log(productsWithDelivery)
   };
   
   
-  
-  
   const calculateTotalAmount = () => {
     const uniqueProducts = getUniqueProducts();
     let totalAmount = 0;

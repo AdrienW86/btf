@@ -133,7 +133,9 @@ useEffect(() => {
           </button>
         </div>
       </section>
+      
       <section className={styles.title}> 
+      <p className={styles.alert}> Les meilleurs prix toute l'année </p>
         <div className={styles.inputContainer}>
           <input 
             type='text'

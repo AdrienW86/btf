@@ -283,3 +283,10 @@
 .linkImg2 {
   margin-right: 8px;
 }
+
+.alert {
+  width: 100%;
+  text-align: center;
+  color: orangered;
+  font-family: "Bebas Neue", sans-serif;
+}

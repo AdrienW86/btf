@@ -54,7 +54,7 @@ export default function Banner(props) {
             <p className={styles.p}> {props.description2}</p>
             <Link href={props.url2} className={styles.link}> Voir la collection </Link>
         </div>
-        <div className={styles.category}>
+        {/* <div className={styles.category}>
             <section className={styles.banner}>         
             <Image 
                 src={props.banner3}
@@ -66,7 +66,7 @@ export default function Banner(props) {
             <h2 className={styles.h2}> LES SHORTS </h2>
             <p className={styles.p}> {props.description3}</p>
             <Link href={props.url3} className={styles.link}> Voir la collection </Link>
-        </div>
+        </div> */}
         <div className={styles.category}>
             <section className={styles.banner}>         
             <Image 

@@ -13,6 +13,16 @@
     cursor: pointer;
 }
 
+.selectSize {
+    width: 100%;
+    text-align: center;
+    color: orangered;
+    padding: 12px;
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
 .modal {
     /* Styles pour la modal */
     position: fixed;

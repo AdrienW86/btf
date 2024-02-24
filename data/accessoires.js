@@ -36,7 +36,7 @@ export const data = {
             name: "Casquette BF Elegance",
             price: 15,
             recto: '/accessoires/casquette-bf-brode.png',
-            verso: '/accessoires/malette.png',
+            
             description: "Casquette BF Elegance 100% coton. Casquettes à 6 panneaux avec broderie plate à l'avant.",
         },     
         {
@@ -45,7 +45,7 @@ export const data = {
             name: "Bob BF Elegance ",
             price: 15,
             recto: '/accessoires/bob.png',
-            verso: '/accessoires/malette.png',
+           
             description: "Bob Elegance BF 100% coton/polyester. Bob avec broderie plate à l'avant.",
         },
         {
@@ -54,7 +54,7 @@ export const data = {
             name: "Bob BF Zen ",
             price: 15,
             recto: '/accessoires/bob-zen.png',
-            verso: '/accessoires/malette.png',
+            
             description: "Bob Zen BF 100% coton/polyester. Bob avec motif imprimé.",
         }  
     ],

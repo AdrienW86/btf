@@ -10,7 +10,7 @@ import Bundesliga from '@/assets/bundesliga.png'
 import Caf from '@/assets/caf.png'
 import Uefa from '@/assets/uefa.png'
 import Card from '@/components/Card/Card'
-import { data } from '@/data/maillots'
+import { data, dataFemmes } from '@/data/maillots'
 import Link from 'next/link'
 import styles from '@/styles/mens.module.css'
 
@@ -108,7 +108,7 @@ export default function maillots() {
                         className={styles.logo}
                     />  
                 </div>       
-                {data.ligue1.map((el, index)=> (
+                {dataFemmes.ligue1.map((el, index)=> (
                     <div className={styles.link}>
                         <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>     
                             <Card 
@@ -140,7 +140,7 @@ export default function maillots() {
                         className={styles.logo}
                     />  
                 </div>           
-                {data.liga.map((el, index)=> (
+                {dataFemmes.liga.map((el, index)=> (
                     <div className={styles.link}>
                         <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>     
                             <Card 
@@ -171,7 +171,7 @@ export default function maillots() {
                         className={styles.logo}
                     />  
                 </div>    
-                {data.premierLeague.map((el, index)=> (
+                {dataFemmes.premierLeague.map((el, index)=> (
                     <div className={styles.link}>
                         <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}> 
                             <Card 
@@ -202,7 +202,7 @@ export default function maillots() {
                         className={styles.logo2}
                     />  
                 </div>     
-                {data.serieA.map((el, index)=> (
+                {dataFemmes.serieA.map((el, index)=> (
                     <div className={styles.link}>
                         <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}> 
                             <Card 
@@ -233,7 +233,7 @@ export default function maillots() {
                         className={styles.logo}
                     />  
                 </div>     
-                {data.bundesliga.map((el, index)=> (
+                {dataFemmes.bundesliga.map((el, index)=> (
                     <div className={styles.link}>
                         <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
                             <Card 
@@ -255,7 +255,7 @@ export default function maillots() {
             </div> 
             <div id="others" className={styles.cardContainer}> 
                 <h2 className={styles.h2}> Les autres clubs </h2>      
-                {data.others.map((el, index)=> (
+                {dataFemmes.others.map((el, index)=> (
                     <div className={styles.link}>
                         <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
                             <Card 
@@ -286,7 +286,7 @@ export default function maillots() {
                         className={styles.logo}
                     />  
                 </div>     
-                {data.afrique.map((el, index)=> (
+                {dataFemmes.afrique.map((el, index)=> (
                     <div className={styles.link}>
                         <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
                             <Card 
@@ -317,7 +317,7 @@ export default function maillots() {
                         className={styles.logo}
                     />  
                 </div>      
-                {data.europe.map((el, index)=> (
+                {dataFemmes.europe.map((el, index)=> (
                     <div className={styles.link}>
                         <Link key={el.id} href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
                             <Card 

@@ -101,7 +101,7 @@ export default function ProductDetails() {
           onClick={() => toggleImage(recto, 'recto')}
         >             
         </button>
-        {product.verso !== "null" &&
+        {product.verso !== "undefined" &&
           <button 
             className={activeButton === 'verso' ? styles.activeButton : styles.button}
             onClick={() => toggleImage(verso, 'verso')}
@@ -109,6 +109,7 @@ export default function ProductDetails() {
           </button>
         }
       </div>
+      <p className={styles.selectSize}> Sélectionnez la taille de votre maillot </p>
       {product.sizes !== "null" &&
        <div className={styles.box}>
         <button 
