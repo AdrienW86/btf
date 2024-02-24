@@ -286,6 +286,8 @@
 
 .alert {
   width: 100%;
+  position: absolute;
+  top: 20px;
   text-align: center;
   color: orangered;
   font-family: "Bebas Neue", sans-serif;
