@@ -4,11 +4,12 @@
 
 .banner {
     position: relative;
-    width: 100%;
+    margin:  0 auto;
+    width: 60%;
     padding: 0 5%;
     transition: .4s ease-in-out;
     overflow: hidden;
-    aspect-ratio: 2/3;
+    aspect-ratio: 4/5;
     max-height: 100vh;  
     cursor: pointer;
 }

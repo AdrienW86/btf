@@ -23,13 +23,13 @@ function CategoryCarousel(props) {
         </Link>
       </section>
      <section className={styles.row}>
-      <Link href={props.shorts}>
+      {/* <Link href={props.shorts}>
           <div className={styles.section}>
             <div className={styles.card}>
               <button className={styles.btn}> Shorts </button>
             </div>           
           </div>
-        </Link>
+        </Link> */}
         <Link href={props.accessoires}>
           <div className={styles.section}>
             <div className={styles.card}>

@@ -97,22 +97,22 @@ export const data = {
         },  
         {
             id: uuidv4(),
-            name: "Ensemble rose",
+            name: "Survêtement sweet",
             price: 62,
             recto: '/survet_femmes/survet-sexy.png',
             verso: '/survet_femmes/survet-sexy.png',
-            description: "Ensemble jogging et sweat à capuche en spandex / polyester de la collection Boutique du Foot.",
+            description: "Ensemble jogging et sweat à capuche en spandex / polyester.",
             sizes: ["S","M","L","XL"]
         },  
-        {
-            id: uuidv4(),
-            name: "Ensemble",
-            price: 62,
-            recto: '/survet_femmes/ensemble1.png',
-            verso: '/survet_femmes/ensemble1.png',
-            description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%) de la collection Boutique du Foot.",
-            sizes: ["S","M","L","XL"]
-        },  
+        // {
+        //     id: uuidv4(),
+        //     name: "Ensemble",
+        //     price: 62,
+        //     recto: '/survet_femmes/ensemble1.png',
+        //     verso: '/survet_femmes/ensemble1.png',
+        //     description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%) de la collection Boutique du Foot.",
+        //     sizes: ["S","M","L","XL"]
+        // },  
         // {
         //     id: uuidv4(),
         //     name: "Ensemble",
@@ -128,11 +128,28 @@ export const data = {
             price: 62,
             recto: '/survet_femmes/survet-polaire.png',
             verso: '/survet_femmes/survet-polaire.png',
-            description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%) de la collection Boutique du Foot.",
+            description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%).",
             sizes: ["S","M","L","XL"]
         },  
     ],
     juniors: [
-
+        {
+            id: uuidv4(),
+            name: "Sweat Manga",
+            price: 39,
+            recto: '/survet_juniors/sweet-junior.png',
+            verso: '/survet_juniors/sweet-junior-verso.png',
+            description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%).",
+            sizes: ["7/8","9/10","11/12","13/14"]
+        }, 
+        {
+            id: uuidv4(),
+            name: "Sweat Ourson",
+            price: 39,
+            recto: '/survet_juniors/sweet-blanc-junior.png',
+            verso: '/survet_juniors/sweet-blanc-junior-verso.png',
+            description: "Ensemble jogging et sweat à capuche en coton (50%) et polyester (50%).",
+            sizes: ["7/8","9/10","11/12","13/14"]
+        },  
     ]
 }

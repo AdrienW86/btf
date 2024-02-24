@@ -9,7 +9,7 @@
     width: 100%;
     transition: .4s ease-in-out;
     overflow: hidden;
-    aspect-ratio: 3/3;
+    aspect-ratio: 4/5;
     max-height: 100vh;
 }
 

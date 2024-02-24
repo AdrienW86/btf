@@ -49,8 +49,6 @@ const handleKeyPress = (event) => {
   }
 };
 
-
-
 const handleMenuToggle = () => {
   setIsMenuOpen(!isMenuOpen);
 };

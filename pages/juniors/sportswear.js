@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Card from '@/components/Card/Card';
 import PaymentBanner from '@/components/PaymentBanner/PaymentBanner'
-import Banner from '@/assets/survet.jpg';
+import Banner from '@/assets/sweet-banner-junior.jpg';
 import { data } from '@/data/sportswer';
 import Link from 'next/link';
 import styles from '@/styles/mens.module.css';
@@ -26,7 +26,8 @@ export default function Sportswear() {
         />
       </section>
       <section className={styles.cardContainer}>
-        {data.men.map((el, index) => (
+        {data.juniors.map((el, index) => (
+          <div className={styles.link}>
           <Link href={`/product-details/${el.id}?name=${el.name}&recto=${el.recto}&verso=${el.verso}&price=${el.price}&link=${el.link}&sizes=${el.sizes}&description=${el.description}`}>
           <Card
             id={el.id}
@@ -40,6 +41,7 @@ export default function Sportswear() {
             onSizeChange={(size) => setSelectedSize(size)}
           />
         </Link>
+        </div>
         ))}
       </section>
       <PaymentBanner/>

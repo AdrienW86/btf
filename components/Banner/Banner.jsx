@@ -7,7 +7,7 @@ import styles from './banner.module.css'
 export default function Banner(props) {
   return (
     <div className={styles.container}>
-        <div >
+        
             <section className={styles.banner}>       
             <h1 className={styles.h1}> {props.title} </h1>
                 <p className={styles.description}>                
@@ -21,7 +21,7 @@ export default function Banner(props) {
                 className={styles.background}
             />  
             </section>           
-        </div>
+        
         <CategoryCarousel 
             sportswear = {props.url1}
             maillots = {props.url2}

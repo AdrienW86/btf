@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Delivery from '@/assets/livraison.png';
 import styles from './basket.module.css';
 import { loadStripe } from '@stripe/stripe-js';
 import PaymentBanner from '../PaymentBanner/PaymentBanner';
@@ -88,24 +87,26 @@ console.log(productsWithDelivery)
   };
   
   const getUniqueProducts = () => {
-    const uniqueProducts = products.reduce((acc, currentProduct) => {
-      const existingIndex = acc.findIndex(
-        (item) => item.id === currentProduct.id && item.selectedSize === currentProduct.selectedSize
-      );
+    const uniqueProductsMap = {};
   
-      if (existingIndex === -1) {
-        acc.push({ ...currentProduct, quantity: 1 });
+    products.forEach((currentProduct) => {
+      const productName = currentProduct.name;
+      if (!uniqueProductsMap[productName]) {
+        uniqueProductsMap[productName] = { ...currentProduct, quantity: 1 };
       } else {
-        acc[existingIndex].quantity += 1;
-      }  
-      return acc;
-    }, []);
+        uniqueProductsMap[productName].quantity += 1;
+      }
+    });
   
-    return uniqueProducts.reverse();
+    const uniqueProducts = Object.values(uniqueProductsMap);
+    return uniqueProducts;
   };
   
+  
+  
+  
   const calculateTotalAmount = () => {
-    const uniqueProducts = products;
+    const uniqueProducts = getUniqueProducts();
     let totalAmount = 0;
     uniqueProducts.forEach((el) => {
       totalAmount += el.quantity * el.price;
@@ -133,7 +134,7 @@ console.log(productsWithDelivery)
           <div className={styles.warning}>Vous n'avez aucun produit dans votre panier</div>
         ) : (
           <div >
-            {products.map((el, index) => (
+            {getUniqueProducts().map((el, index) => (
               <div key={index} className={styles.product}>
                 <button onClick={() => deleteAllCart(el)} className={styles.close}>
                   X

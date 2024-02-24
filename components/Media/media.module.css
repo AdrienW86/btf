@@ -1,18 +1,18 @@
-.filter {
+/* .filter {
   position: absolute;
   height: 148px;
   width: 100%;
   top: 0;
   z-index: 1;
-  background-color: white;;
-}
+  background-color: white;
+} */
 
 .banner {
   position: relative;
   width: 100%;
   transition: .4s ease-in-out;
   overflow: hidden;
-  aspect-ratio: 3/6;
+  aspect-ratio: 3/5;
   max-height: 100vh;
 }
 

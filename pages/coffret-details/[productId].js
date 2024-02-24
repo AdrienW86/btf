@@ -31,10 +31,12 @@ export default function ProductDetails() {
   // État local pour stocker l'URL des images et le bouton actif
   const [currentImage, setCurrentImage] = useState(recto);
   const [activeButton, setActiveButton] = useState('recto');
-  const [toggle, setToggle] = useState(false);
   const [selectedSize, setSelectedSize] = useState('S'); 
   const [isModalOpen, setIsModalOpen] = useState(false);;
   const [products, setProducts] = useState([]);
+
+
+  const [selectedColor, setSelectedColor] = useState('S'); 
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
